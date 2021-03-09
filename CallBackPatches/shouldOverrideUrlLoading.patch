@@ -1,0 +1,38 @@
+@@ Variable Declaration
+$i0 := int
+$v1 := android.net.Uri
+
+@@ Issue Location
+[CALLBACK] <[android.webkit.WebViewClient]: boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest)> Build.VERSION.SDK_INT 24
+
+@@ Patch Denotation
+[Method] <[android.webkit.WebViewClient]: boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest)>
+[Stmt]$r0 := @this: [android.webkit.WebViewClient]
+[Stmt]$a1 := @parameter0: android.webkit.WebView
+[Stmt]$a2 := @parameter1: android.webkit.WebResourceRequest
+[CUT] ... when != [END of Method]
++ $a3 = interfaceinvoke $a2.<android.webkit.WebResourceRequest: android.net.Uri getUrl()>()
++ $a4 = specialinvoke $r0.<[android.webkit.WebViewClient]: boolean myNewmethod(android.webkit.WebView,android.webkit.WebResourceRequest,android.net.Uri)>($a1,$a2,$a3)
++ return $a4
+
++ [NEW Method][private] <[android.webkit.WebViewClient]: void myNewmethod(android.webkit.WebView,android.webkit.WebResourceRequest,android.net.Uri)>
++ $r1 := @this: [android.webkit.WebViewClient]
++ $b1 := @parameter0: android.webkit.WebView
++ $b2 := @parameter1: android.webkit.WebResourceRequest
++ $b3 := @parameter2: android.net.Uri
+[PASTE]
++ return
++ [END of Method]
+
++ [NEW Method][public] <[android.webkit.WebViewClient]: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>
++ $r2 := @this: [android.webkit.WebViewClient]
++ $c1 := @parameter0: android.webkit.WebView
++ $c2 := @parameter1: java.lang.String
++ $i0 = <android.os.Build$VERSION: int SDK_INT>
++ if $i0 >= 24 goto <label_1>
++ $c3 = staticinvoke <android.net.Uri: android.net.Uri parse(java.lang.String)>($c2)
++ $c4 = specialinvoke $r2.<[android.webkit.WebViewClient]: boolean myNewmethod(android.webkit.WebView,android.webkit.WebResourceRequest,android.net.Uri)>($c1,null,$c3)
++ return $c4
++ <label_1>
++ return
++ [END of Method]

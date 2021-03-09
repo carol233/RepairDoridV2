@@ -1,0 +1,17 @@
+//(24)<android.view.View: boolean startDrag(android.content.ClipData,android.view.View.DragShadowBuilder,java.lang.Object,int)>[normal]    
+//---->    <android.view.View: boolean startDragAndDrop(android.content.ClipData,android.view.View.DragShadowBuilder,java.lang.Object,int)>[normal]
+
+@@ Variable declaration
+
+
+@@ Issue Location
+[OS] <android.view.View: boolean startDrag(android.content.ClipData,android.view.View.DragShadowBuilder,java.lang.Object,int)> Build.VERSION.SDK_INT 24
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 < 26 goto <label_original>
++ $r1 = virtualinvoke $r3.<android.view.View: boolean startDrag(android.content.ClipData,android.view.View.DragShadowBuilder,java.lang.Object,int)>($v4,$v5,$v6,$v7)
++ goto <label_next>
++ <label_original>
+[Stmt] $r1 = virtualinvoke $r3.<android.view.View: boolean startDragAndDrop(android.content.ClipData,android.view.View.DragShadowBuilder,java.lang.Object,int)>($v4,$v5,$v6,$v7)
++ <label_next>

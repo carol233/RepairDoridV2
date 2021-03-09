@@ -1,0 +1,22 @@
+//(24)<android.webkit.WebViewClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>[normal]   
+//---->     <android.webkit.WebViewClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest)>[normal]
+
+
+@@ Variable declaration
+
+
+@@ Issue Location
+[OS] <android.webkit.WebViewClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)> Build.VERSION.SDK_INT 24
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 < 26 goto <label_original>
++ $r7 = new android.webkit.WebResourceRequest$Builder
++ specialinvoke $r7.<android.webkit.WebResourceRequest$Builder: void <init>()>()
++ $r7 = virtualinvoke $r7.<android.webkit.WebResourceRequest$Builder: android.webkit.WebResourceRequest$Builder setUrl(java.lang.String)>($r5)
++ $r8 = virtualinvoke $r7.<android.webkit.WebResourceRequest$Builder: android.webkit.WebResourceRequest build()>()
++ $r1 = virtualinvoke $r3.<android.webkit.WebViewClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest)>($r4,$r8)
++ goto <label_next>
++ <label_original>
+[Stmt] $r1 = virtualinvoke $r3.<android.webkit.WebViewClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>($r4,$r5)
++ <label_next>

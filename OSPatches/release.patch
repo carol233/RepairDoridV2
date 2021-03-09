@@ -1,0 +1,19 @@
+//(24)<android.content.ContentProviderClient: boolean release()>[normal]
+//---->    <android.content.ContentProviderClient: void close()>[normal]
+
+@@ Variable declaration
+$r6 := int
+$r1 := android.content.ContentProviderClient
+
+@@ Issue Location
+[OS] <android.content.ContentProviderClient: boolean release()> Build.VERSION.SDK_INT 24
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 < 24 goto <label_original>
++ virtualinvoke $r1.<android.content.ContentProviderClient: void close()>()
++ goto <label_next>
++ <label_original>
+[Stmt] virtualinvoke $r1.<android.content.ContentProviderClient: boolean release()>()
++ <label_next>
+

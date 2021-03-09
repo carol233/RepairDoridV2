@@ -1,0 +1,40 @@
+@@ Variable Declaration
+$i0 := int
+
+@@ Issue Location
+[CALLBACK] <[android.webkit.WebViewClient]: onReceivedHttpError(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceResponse)> Build.VERSION.SDK_INT 23
+
+@@ Patch Denotation
+[Method] <[android.webkit.WebViewClient]: void onReceivedHttpError(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceResponse)>
+[Stmt]$r0 := @this: [android.webkit.WebViewClient]
+[Stmt]$a1 := @parameter0: android.webkit.WebView
+[Stmt]$a2 := @parameter1: android.webkit.WebResourceRequest
+[Stmt]$a3 := @parameter2: android.webkit.WebResourceResponse
+[CUT] ... when != [END of Method]
++ virtualinvoke $r0.<[android.webkit.WebViewClient]: void myNewMethod(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceResponse,int,java.lang.String,java.lang.String)>($a1,$a2,$a3,0,null,null)
++ return
+
++ [NEW Method][public] <[android.webkit.WebViewClient]: void myNewMethod(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceResponse,int,java.lang.String,java.lang.String)>
++ $r1 := @this: [android.webkit.WebViewClient]
++ $c1 := @parameter0: android.webkit.WebView
++ $c2 := @parameter1: android.webkit.WebResourceRequest
++ $c3 := @parameter2: android.webkit.WebResourceResponse
++ $c4 := @parameter3: int
++ $c5 := @parameter4: java.String.string
++ $c6 := @parameter5: java.String.string
+[PASTE]
++ return
++ [END of Method]
+
++ [NEW Method][public] <[android.webkit.WebViewClient]: void onReceivedHttpError(android.webkit.WebView,int,java.lang.String,java.lang.String)>
++ $r2 := @this: [android.webkit.WebViewClient]
++ $b1 := @parameter0: android.app.Webview
++ $b2 := @parameter1: int
++ $b3 := @parameter2: java.String.string
++ $b4 := @parameter3: java.String.string
++ $i0 = <android.os.Build$VERSION: int SDK_INT>
++ if $i0 >= 23 goto <label_1>
++ virtualinvoke $r2.<[android.webkit.WebViewClient]: void myNewMethod(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceResponse,int,java.lang.String,java.lang.String)>($b1,null,null,$b2,$b3,$b4)
++ <label_1>
++ return
++ [END of Method]

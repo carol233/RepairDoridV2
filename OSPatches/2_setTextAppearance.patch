@@ -1,0 +1,17 @@
+//(23)<android.widget.TextView: void setTextAppearance(android.content.Context,int)>[normal]    
+//---->    <android.widget.TextView: java.lang.String setTextAppearance(int)>[normal]
+
+@@ Variable declaration
+
+
+@@ Issue Location
+[OS] <android.widget.TextView: void setTextAppearance(android.content.Context,int)> Build.VERSION.SDK_INT 23
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 < 26 goto <label_original>
++ $r1 = virtualinvoke $r3.<android.widget.TextView: java.lang.String setTextAppearance(int)>($r5)
++ goto <label_next>
++ <label_original>
+[Stmt] $r1 = virtualinvoke $r3.<android.widget.TextView: void setTextAppearance(android.content.Context,int)>($r4,$r5)
++ <label_next>

@@ -1,0 +1,16 @@
+// (16,25) <android.content.Intent: android.content.ClipData getClipData()>
+
+@@ Variable declaration
+
+
+@@ Issue Location
+[OS] <android.content.Intent: android.content.ClipData getClipData()> Build.VERSION.SDK_INT 16
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 > 16 goto <label_original>
++ return
++ goto <label_next>
++ <label_original>
+[Stmt] $r4 = virtualinvoke $r5.<android.content.Intent: android.content.ClipData getClipData()>()
++ <label_next>

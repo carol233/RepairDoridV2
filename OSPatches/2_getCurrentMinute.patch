@@ -1,0 +1,18 @@
+//(23)<android.widget.TimePicker: java.lang.Integer getCurrentMinute()>[normal]    
+// ---->    <android.widget.TimePicker: int getMinute()>[normal]
+
+
+@@ Variable declaration
+
+@@ Issue Location
+[OS] <android.widget.TimePicker: java.lang.Integer getCurrentMinute()> Build.VERSION.SDK_INT 23
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 < 24 goto <label_original>
++ $i0 = virtualinvoke $r3.<android.widget.TimePicker: int getMinute()>()
++ goto <label_next>
++ <label_original>
+[Stmt] $r9 = virtualinvoke $r3.<android.widget.TimePicker: java.lang.Integer getCurrentMinute()>()
+[Stmt] $i0 = virtualinvoke $r9.<java.lang.Integer: int intValue()>()
++ <label_next>

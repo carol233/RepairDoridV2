@@ -1,0 +1,35 @@
+@@ Variable Declaration
+[SEARCH CLASS][android.app.Activity]
+$i0 := int
+
+@@ Issue Location
+[CALLBACK] <[android.app.Fragment]: void onAttach(android.content.Context)> Build.VERSION.SDK_INT 23
+
+@@ Patch Denotation
+[Method] <[android.app.Fragment]: void onAttach(android.content.Context)>
+[Stmt]$r0 := @this: [android.app.Fragment]
+[Stmt]$a0 := @parameter0: android.content.Context
+[Stmt]specialinvoke $r0.<android.app.Fragment: void onAttach(android.content.Context)>($a0)
+[CUT] ... when != [END of Method]
++ $v2 = ([android.app.Activity]) $a0;
++ virtualinvoke $r0.<[android.app.Fragment]: void myNewMethod([android.app.Activity])>($v2)
++ return
+
++ [NEW Method][private] <[android.app.Fragment]: void myNewMethod([android.app.Activity])>
++ $r1 := @this: [android.app.Fragment]
++ $a2 := @parameter0: [android.app.Activity]
+[PASTE]
++ return
++ [END of Method]
+
++ [NEW Method][public] <[android.app.Fragment]: void onAttach(android.app.Activity)>
++ $r2 := @this: [android.app.Fragment]
++ $a1 := @parameter0: android.app.Activity
++ specialinvoke $r2.<android.app.Fragment: void onAttach(android.app.Activity)>($a1)
++ $i0 = <android.os.Build$VERSION: int SDK_INT>
++ if $i0 >= 23 goto <label_1>
++ $v3 = ([android.app.Activity]) $a1;
++ virtualinvoke $r2.<[android.app.Fragment]: void myNewMethod([android.app.Activity])>($v3);
++ <label_1>
++ return
++ [END of Method]

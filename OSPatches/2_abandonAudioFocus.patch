@@ -1,0 +1,21 @@
+//(26)<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>[normal]
+//---->    <android.media.AudioManager: int abandonAudioFocusRequest(android.media.AudioFocusRequest)>[normal]
+
+@@ Variable declaration
+
+@@ Issue Location
+[OS] <android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)> Build.VERSION.SDK_INT 26
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 < 26 goto <label_original>
++ $r1 = new android.media.AudioFocusRequest$Builder
++ specialinvoke $r1.<android.media.AudioFocusRequest$Builder: void <init>(int)>(1)
++ $r1 = virtualinvoke $r1.<android.media.AudioFocusRequest$Builder: android.media.AudioFocusRequest$Builder setOnAudioFocusChangeListener(android.media.AudioManager$OnAudioFocusChangeListener)>($r2)
++ $r4 = virtualinvoke $r1.<android.media.AudioFocusRequest$Builder: android.media.AudioFocusRequest build()>()
++ virtualinvoke $r3.<android.media.AudioManager: int abandonAudioFocusRequest(android.media.AudioFocusRequest)>($r4)
++ goto <label_next>
++ <label_original>
+[Stmt] virtualinvoke $r3.<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>($r2)
++ <label_next>
+

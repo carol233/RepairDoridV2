@@ -1,0 +1,19 @@
+//(16)<android.view.View: void setBackgroundDrawable(android.graphics.drawable.Drawable)>[normal]
+//---->    <android.view.View: void setBackground(android.graphics.drawable.Drawable)>[normal]
+
+@@ Variable declaration
+$r1 := int
+$r2 := android.view.View
+$r3 := android.graphics.drawable.Drawable
+
+@@ Issue Location
+[OS] <android.view.View: void setBackgroundDrawable(android.graphics.drawable.Drawable)> Build.VERSION.SDK_INT 16
+
+@@ Patch Denotation
++ $r1 = <android.os.Build$VERSION: int SDK_INT>
++ if $r1 < 16 goto <label_original>
++ virtualinvoke $r2.<android.view.View: void setBackground(android.graphics.drawable.Drawable)>($r3)
++ goto <label_next>
++ <label_original>
+[Stmt] virtualinvoke $r2.<android.view.View: void setBackgroundDrawable(android.graphics.drawable.Drawable)>($r3)
++ <label_next>

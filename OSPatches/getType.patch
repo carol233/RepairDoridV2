@@ -1,0 +1,35 @@
+// (28)<android.net.NetworkInfo: int getType()>[normal]    ---->    
+// <android.net.NetworkCapabilities: boolean hasTransport(int)>[normal]
+
+@@ Variable declaration
+[SEARCH] $r4 := android.net.ConnectivityManager
+$r2 := android.net.Network
+$i1 := int
+$i0 := int
+
+
+@@ Issue Location
+[OS] <android.net.NetworkInfo: int getType()> Build.VERSION.SDK_INT 28
+
+@@ Patch Denotation
++ $i0 = <android.os.Build$VERSION: int SDK_INT>
++ if $i0 < 23 goto <label_original>
++ $r6 = virtualinvoke $r4.<android.net.ConnectivityManager: android.net.Network[] getAllNetworks()>()
++ $i0 = lengthof $r6
++ $i1 = 0
++ <label_3>
++ if $i1 >= $i0 goto <label_2>
++ $r2 = $r6[$i1]
++ $r7 = virtualinvoke $r4.<android.net.ConnectivityManager: android.net.NetworkCapabilities getNetworkCapabilities(android.net.Network)>($r2)
++ if $r7 == null goto <label_1>
++ $z0 = virtualinvoke $r7.<android.net.NetworkCapabilities: boolean hasTransport(int)>(1)
++ if $z0 == 0 goto <label_1>
++ return 1
++ <label_1>
++ $i1 = $i1 + 1
++ goto <label_3>
++ <label_2>
++ return 0
++ <label_original>
+[Stmt] $i0 = virtualinvoke $r5.<android.net.NetworkInfo: int getType()>()
++ <label_next>

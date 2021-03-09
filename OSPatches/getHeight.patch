@@ -1,0 +1,22 @@
+//(23)<android.view.Display: int getHeight()>[normal]
+//---->    <android.view.Display: void getSize(android.graphics.Point)>[normal]
+
+@@ Variable declaration
+$r6 := int
+$r4 := android.view.Display
+
+@@ Issue Location
+[OS] <android.view.Display: int getHeight()> Build.VERSION.SDK_INT 23
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 < 23 goto <label_original>
++ $r5 = new android.graphics.Point
++ specialinvoke $r5.<android.graphics.Point: void <init>()>()
++ virtualinvoke $r4.<android.view.Display: void getSize(android.graphics.Point)>($r5)
++ $i0 = $r5.<android.graphics.Point: int y>
++ goto <label_next>
++ <label_original>
+[Stmt] $i0 = virtualinvoke $r4.<android.view.Display: int getHeight()>()
++ <label_next>
+

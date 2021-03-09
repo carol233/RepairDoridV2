@@ -1,0 +1,16 @@
+// Samsung
+
+@@ Variable declaration
+
+@@ Issue Location
+[DEVICE] <android.app.DatePickerDialog: android.app.DatePickerDialog DatePickerDialog(android.content.Context,android.app.DatePickerDialog$OnDateSetListener,int,int,int)> Build.MODEL "Samsung"
+
+@@ Patch Denotation
+[Stmt] $r2 = virtualinvoke $r0.<android.app.Fragment: android.app.Activity getActivity()>()
++ $r3 = <android.os.Build: java.lang.String MANUFACTURER>
++ $z0 = virtualinvoke $r3.<java.lang.String: boolean equals(java.lang.Object)>("Samsung")
++ if $z0 == 0 goto <label_next>
++ $r2 = new android.view.ContextThemeWrapper
++ $r3 = virtualinvoke $r0.<android.app.Fragment: android.app.Activity getActivity()>()
++ specialinvoke $r2.<android.view.ContextThemeWrapper: void <init>(android.content.Context,int)>($r3,16973939)
++ <label_next>

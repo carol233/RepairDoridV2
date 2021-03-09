@@ -1,0 +1,25 @@
+// <android.app.Notification: void <init>(int,java.lang.CharSequence,long)> -->
+// <android.app.Notification.Builder: android.app.Notification build()>()
+// All posted Notifications must specify a NotificationChannel Id
+
+@@ Variable declaration
+[SEARCH] $c1 := android.content.Context
+[SEARCH] $c2 := java.lang.String
+
+@@ Issue Location
+[OS] <android.view.Display: int getWidth()> Build.VERSION.SDK_INT 23
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 < 23 goto <label_original>
++ $r1 = new android.app.Notification$Builder
++ specialinvoke $r1.<android.app.Notification$Builder: void <init>(android.content.Context,java.lang.String)>($c1,$c2)
++ $r1 = virtualinvoke $r1.<android.app.Notification$Builder: android.app.Notification$Builder setSmallIcon(int)>($v1)
++ $r1 = virtualinvoke $r1.<android.app.Notification$Builder: android.app.Notification$Builder setTicker(java.lang.CharSequence)>($v2)
++ $r1 = virtualinvoke $r1.<android.app.Notification$Builder: android.app.Notification$Builder setWhen(long)>($v3)
++ $r4 = virtualinvoke $r1.<android.app.Notification.Builder: android.app.Notification build()>()
++ goto <label_next>
++ <label_original>
+[Stmt] $r4 = new android.app.Notification
+[Stmt] specialinvoke $r4.<android.app.Notification: void <init>(int,java.lang.CharSequence,long)>($v1,$v2,$v3)
++ <label_next>

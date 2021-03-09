@@ -1,0 +1,16 @@
+<android.content.Intent: android.content.ClipData getClipData()>
+<android.app.Notification.Builder: android.app.Notification.Builder setLocalOnly(boolean)>
+<android.view.View: void setSystemUiVisibility(int)>
+<android.os.Bundle: java.lang.String getString(java.lang.String,java.lang.String)>
+<android.view.View: void setBackgroundDrawable(android.graphics.drawable.Drawable)>
+<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>
+<android.app.Notification: void <init>(int,java.lang.CharSequence,long)>
+<android.net.NetworkInfo: int getType()>
+<android.view.Display: int getWidth()>
+<android.view.Display: int getHeight()>
+<android.content.res.Resources: int getColor(int)>
+<android.widget.PopupWindow: void setWindowLayoutMode(int,int)>
+<android.content.ContentProviderClient: boolean release()>
+<android.accessibilityservice.AccessibilityServiceInfo: java.lang.String getDescription()>
+<android.accessibilityservice.AccessibilityServiceInfo: boolean getCanRetrieveWindowContent()>
+<android.text.Html: java.lang.String toHtml(android.text.Spanned)>

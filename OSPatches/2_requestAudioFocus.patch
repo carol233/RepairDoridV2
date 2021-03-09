@@ -1,0 +1,29 @@
+//(26)<android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)>[normal]
+//---->    <android.media.AudioManager: int requestAudioFocus(android.media.AudioFocusRequest)>[normal]
+
+
+@@ Variable declaration
+
+
+@@ Issue Location
+[OS] <android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)> Build.VERSION.SDK_INT 26
+
+@@ Patch Denotation
++ $r0 = <android.os.Build$VERSION: int SDK_INT>
++ if $r0 < 26 goto <label_original>
++ $r6 = new android.media.AudioFocusRequest$Builder
++ specialinvoke $r6.<android.media.AudioFocusRequest$Builder: void <init>(int)>(1)
++ $r7 = new android.media.AudioAttributes$Builder
++ specialinvoke $r7.<android.media.AudioAttributes$Builder: void <init>()>()
++ $r7 = virtualinvoke $r7.<android.media.AudioAttributes$Builder: android.media.AudioAttributes$Builder setUsage(int)>(14)
++ $r7 = virtualinvoke $r7.<android.media.AudioAttributes$Builder: android.media.AudioAttributes$Builder setContentType(int)>(1)
++ $r8 = virtualinvoke $r7.<android.media.AudioAttributes$Builder: android.media.AudioAttributes build()>()
++ $r6 = virtualinvoke $r6.<android.media.AudioFocusRequest$Builder: android.media.AudioFocusRequest$Builder setAudioAttributes(android.media.AudioAttributes)>($r8)
++ $r6 = virtualinvoke $r6.<android.media.AudioFocusRequest$Builder: android.media.AudioFocusRequest$Builder setAcceptsDelayedFocusGain(boolean)>(1)
++ $r6 = virtualinvoke $r6.<android.media.AudioFocusRequest$Builder: android.media.AudioFocusRequest$Builder setOnAudioFocusChangeListener(android.media.AudioManager$OnAudioFocusChangeListener)>($r9)
++ $r10 = virtualinvoke $r6.<android.media.AudioFocusRequest$Builder: android.media.AudioFocusRequest build()>()
++ virtualinvoke $r5.<android.media.AudioManager: int requestAudioFocus(android.media.AudioFocusRequest)>($r10)
++ goto <label_next>
++ <label_original>
+[Stmt] virtualinvoke $r5.<android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)>($r9, 3, 1)
++ <label_next>

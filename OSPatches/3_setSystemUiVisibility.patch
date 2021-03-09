@@ -1,0 +1,16 @@
+// (16,25) <android.view.View: void setSystemUiVisibility(int)>
+
+@@ Variable declaration
+
+
+@@ Issue Location
+[OS] <android.view.View: void setSystemUiVisibility(int)> Build.VERSION.SDK_INT 16
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 > 16 goto <label_original>
++ return
++ goto <label_next>
++ <label_original>
+[Stmt] virtualinvoke $r5.<android.view.View: void setSystemUiVisibility(int)>($r3)
++ <label_next>

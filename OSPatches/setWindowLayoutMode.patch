@@ -1,0 +1,17 @@
+// (23) <android.widget.PopupWindow: void setWindowLayoutMode(int,int)> --> <android.widget.PopupWindow: void setWidth(int)>
+
+@@ Variable declaration
+
+
+@@ Issue Location
+[OS] <android.widget.PopupWindow: void setWindowLayoutMode(int,int)> Build.VERSION.SDK_INT 23
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 < 16 goto <label_original>
++ virtualinvoke $r1.<android.widget.PopupWindow: void setWidth(int)>($r2)
++ virtualinvoke $r1.<android.widget.PopupWindow: void setHeight(int)>($r3)
++ goto <label_next>
++ <label_original>
+[Stmt] virtualinvoke $r1.<android.widget.PopupWindow: void setWindowLayoutMode(int,int)>($r2,$r3)
++ <label_next>

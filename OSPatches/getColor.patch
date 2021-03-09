@@ -1,0 +1,16 @@
+//(23) <android.content.res.Resources: int getColor(int)>
+
+@@ Variable declaration
+
+
+@@ Issue Location
+[OS] <android.content.res.Resources: int getColor(int)> Build.VERSION.SDK_INT 23
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 < 16 goto <label_original>
++ $r2 = virtualinvoke $r0.<android.content.res.Resources: int getColor(int,android.content.res.Resources.Theme)>($i0, null)
++ goto <label_next>
++ <label_original>
+[Stmt] $r2 = virtualinvoke $r0.<android.content.res.Resources: int getColor(int)>($i0)
++ <label_next>

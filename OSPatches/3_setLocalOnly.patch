@@ -1,0 +1,17 @@
+//(16,25) <android.app.Notification.Builder: android.app.Notification.Builder setLocalOnly(boolean)>
+
+
+@@ Variable declaration
+
+
+@@ Issue Location
+[OS] <android.app.Notification.Builder: android.app.Notification.Builder setLocalOnly(boolean)> Build.VERSION.SDK_INT 16
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 > 16 goto <label_original>
++ return
++ goto <label_next>
++ <label_original>
+[Stmt] $r5 = virtualinvoke $r5.<android.app.Notification.Builder: android.app.Notification.Builder setLocalOnly(boolean)>($r1)
++ <label_next>

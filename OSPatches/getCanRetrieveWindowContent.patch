@@ -1,0 +1,17 @@
+//(18)<android.accessibilityservice.AccessibilityServiceInfo: boolean getCanRetrieveWindowContent()>[normal]    
+//---->  <android.accessibilityservice.AccessibilityServiceInfo: int getCapabilities()>[normal]
+
+@@ Variable declaration
+
+
+@@ Issue Location
+[OS] <android.accessibilityservice.AccessibilityServiceInfo: boolean getCanRetrieveWindowContent()> Build.VERSION.SDK_INT 18
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 < 18 goto <label_original>
++ $r2 = virtualinvoke $r1.<android.accessibilityservice.AccessibilityServiceInfo: boolean getCanRetrieveWindowContent()>()
++ goto <label_next>
++ <label_original>
+[Stmt] $r2 = virtualinvoke $r1.<android.accessibilityservice.AccessibilityServiceInfo: int getCapabilities()>()
++ <label_next>

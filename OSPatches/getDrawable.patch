@@ -1,0 +1,20 @@
+//(22)<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>[normal]
+//---->    <android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int,android.content.res.Resources$Theme)>[normal]
+
+@@ Variable declaration
+$r6 := int
+$i0 := int
+$r2 := android.graphics.drawable.Drawable
+$r1 := android.content.res.Resources
+
+@@ Issue Location
+[OS] <android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)> Build.VERSION.SDK_INT 22
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 < 22 goto <label_original>
++ $r2 = virtualinvoke $r1.<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int,android.content.res.Resources$Theme)>($i0, null)
++ goto <label_next>
++ <label_original>
+[Stmt] $r2 = virtualinvoke $r1.<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>($i0)
++ <label_next>

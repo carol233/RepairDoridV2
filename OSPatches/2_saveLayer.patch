@@ -1,0 +1,21 @@
+//(26)<android.graphics.Canvas: int saveLayer(android.graphics.RectF,android.graphics.Paint,int)>[normal]
+//---->    <android.graphics.Canvas: int saveLayer(android.graphics.RectF,android.graphics.Paint)>[normal]
+
+@@ Variable declaration
+$r1 := int
+$r2 := aandroid.graphics.Canvas
+$r3 := android.graphics.RectF
+$r4 := android.graphics.Paint
+$b1 := int
+
+@@ Issue Location
+[OS] <android.graphics.Canvas: int saveLayer(android.graphics.RectF,android.graphics.Paint,int)> Build.VERSION.SDK_INT 26
+
+@@ Patch Denotation
++ $r1 = <android.os.Build$VERSION: int SDK_INT>
++ if $r1 < 26 goto <label_original>
++ virtualinvoke $r2.<android.graphics.Canvas: int saveLayer(android.graphics.RectF,android.graphics.Paint)>($r3, $r4)
++ goto <label_next>
++ <label_original>
+[Stmt] virtualinvoke $r2.<android.graphics.Canvas: int saveLayer(android.graphics.RectF,android.graphics.Paint,int)>($r3, $r4, $b1)
++ <label_next>

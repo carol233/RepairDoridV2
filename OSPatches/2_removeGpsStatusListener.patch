@@ -1,0 +1,18 @@
+// (24) public boolean removeGpsStatusListener(android.location.GpsStatus.Listener) --
+// unregisterGnssStatusCallback(android.location.GnssStatus.Callback) 
+
+@@ Variable declaration
+[SEARCH] $r2 := android.location.GnssStatus.Callback
+
+@@ Issue Location
+[OS] <android.location.LocationManager: boolean removeGpsStatusListener(android.location.GpsStatus.Listener)> Build.VERSION.SDK_INT 24
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 < 24 goto <label_original>
++ virtualinvoke $r3.<android.location.LocationManager: void unregisterGnssStatusCallback(android.location.GnssStatus.Callback)>($r2)
++ goto <label_next>
++ <label_original>
+[Stmt] virtualinvoke $r3.<android.location.LocationManager: void removeGpsStatusListener(android.location.GpsStatus.Listener)>($r1)
++ <label_next>
+

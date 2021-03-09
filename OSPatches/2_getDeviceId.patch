@@ -1,0 +1,17 @@
+//(26)<android.telephony.TelephonyManager: java.lang.String getDeviceId()>[normal]    
+//---->    <android.telephony.TelephonyManager: java.lang.String getImei(int)>[normal]
+
+@@ Variable declaration
+
+
+@@ Issue Location
+[OS] <android.telephony.TelephonyManager: java.lang.String getDeviceId()> Build.VERSION.SDK_INT 26
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 < 26 goto <label_original>
++ $r1 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getImei(int)>(0)
++ goto <label_next>
++ <label_original>
+[Stmt] $r1 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>()
++ <label_next>

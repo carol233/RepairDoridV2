@@ -1,0 +1,17 @@
+//(21)<android.view.accessibility.AccessibilityNodeInfo: void addAction(int)>[normal]
+//---->    <android.view.accessibility.AccessibilityNodeInfo: void addAction(android.view.accessibility.AccessibilityNodeInfo$AccessibilityAction)>[normal]
+
+@@ Variable declaration
+
+@@ Issue Location
+[OS] <android.view.accessibility.AccessibilityNodeInfo: void addAction(int)> Build.VERSION.SDK_INT 21
+
+@@ Patch Denotation
++ $r0 = <android.os.Build$VERSION: int SDK_INT>
++ if $r0 < 21 goto <label_original>
++ $r2 = <android.view.accessibility.AccessibilityNodeInfo$AccessibilityAction: android.view.accessibility.AccessibilityNodeInfo$AccessibilityAction ACTION_SCROLL_BACKWARD>
++ virtualinvoke $r1.<android.view.accessibility.AccessibilityNodeInfo: void addAction(android.view.accessibility.AccessibilityNodeInfo$AccessibilityAction)>($r2)
++ goto <label_next>
++ <label_original>
+[Stmt] virtualinvoke $r1.<android.view.accessibility.AccessibilityNodeInfo: void addAction(int)>(1)
++ <label_next>

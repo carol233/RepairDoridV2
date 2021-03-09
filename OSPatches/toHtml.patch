@@ -1,0 +1,19 @@
+//(24)<android.text.Html: java.lang.String toHtml(android.text.Spanned)>[static]
+//---->  <android.text.Html: java.lang.String toHtml(android.text.Spanned,int)>[static]
+
+@@ Variable declaration
+$r6 := int
+$r1 := java.lang.String
+$r0 := android.text.Spanned
+
+@@ Issue Location
+[OS] <android.text.Html: java.lang.String toHtml(android.text.Spanned)> Build.VERSION.SDK_INT 28
+
+@@ Patch Denotation
++ $r6 = <android.os.Build$VERSION: int SDK_INT>
++ if $r6 < 24 goto <label_original>
++ $r1 = staticinvoke <android.text.Html: java.lang.String toHtml(android.text.Spanned,int)>($r0, 0)
++ goto <label_next>
++ <label_original>
+[Stmt] $r1 = staticinvoke <android.text.Html: java.lang.String toHtml(android.text.Spanned)>($r0)
++ <label_next>
