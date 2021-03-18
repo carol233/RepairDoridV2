@@ -193,6 +193,12 @@ class InstrumentBody {
             case "boolean":
                 theType = BooleanType.v();
                 break;
+            case "byte":
+                theType = ByteType.v();
+                break;
+            case "char":
+                theType = CharType.v();
+                break;
             case "long":
                 theType = LongType.v();
                 break;
@@ -219,6 +225,12 @@ class InstrumentBody {
                 break;
             case "boolean[]":
                 theType = ArrayType.v(BooleanType.v(), 1);
+                break;
+            case "byte[]":
+                theType = ArrayType.v(ByteType.v(), 1);
+                break;
+            case "char[]":
+                theType = ArrayType.v(CharType.v(), 1);
                 break;
             default: {
                 if (s.contains("[]")) {

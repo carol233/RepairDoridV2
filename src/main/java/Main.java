@@ -38,7 +38,7 @@ public class Main {
         Options.v().set_output_format(Options.output_format_none);
         //-force-overwrite
         Options.v().set_force_overwrite(true);
-        Options.v().set_validate(true); // Validate Jimple bodies in each transofrmation pack
+        Options.v().set_validate(true); // Validate Jimple bodies in each transformation pack
         // Resolve required classes
         Scene.v().addBasicClass("java.io.PrintStream", SootClass.SIGNATURES);
         Scene.v().addBasicClass("java.lang.System",SootClass.SIGNATURES);
