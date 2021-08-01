@@ -8,19 +8,19 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        String SemanticPatchPath_os = args[0];
-        String SemanticPatchPath_device = args[1];
-        String SemanticPatchPath_callback = args[2];
-        String androidJar = args[3];
-        String APK = args[4];
-        String logPath = args[5];
+//        String SemanticPatchPath_os = args[0];
+//        String SemanticPatchPath_device = args[1];
+//        String SemanticPatchPath_callback = args[2];
+//        String androidJar = args[3];
+//        String APK = args[4];
+//        String logPath = args[5];
 
-//        SemanticPatchPath_os = "OSPatches";
-//        SemanticPatchPath_device = "DevicePatches";
-//        SemanticPatchPath_callback = "CallBackPatches";
-//        String androidJar = "/Users/yzha0544/Library/Android/sdk/platforms/";
-//        String APK = "apps/wpandroid-16.3-universal.apk";
-//        String logPath = "tmp_output.csv";
+        String SemanticPatchPath_os = "OSPatches";
+        String SemanticPatchPath_device = "DevicePatches";
+        String SemanticPatchPath_callback = "CallBackPatches";
+        String androidJar = "/Users/yzha0544/Library/Android/sdk/platforms/";
+        String APK = "apps/wpandroid-8.9.apk";
+        String logPath = "tmp_output.csv";
 
         G.reset();
         //set options

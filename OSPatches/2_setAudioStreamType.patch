@@ -12,9 +12,9 @@
 + if $r6 < 26 goto <label_original>
 + $r4 = new android.media.AudioAttributes$Builder
 + specialinvoke $r4.<android.media.AudioAttributes$Builder: void <init>()>()
-+ r4 = virtualinvoke r4.<android.media.AudioAttributes$Builder: android.media.AudioAttributes$Builder setContentType(int)>(1)
-+ r4 = virtualinvoke r4.<android.media.AudioAttributes$Builder: android.media.AudioAttributes$Builder setUsage(int)>(3)
-+ $r5 = virtualinvoke r4.<android.media.AudioAttributes$Builder: android.media.AudioAttributes build()>()
++ $r4 = virtualinvoke $r4.<android.media.AudioAttributes$Builder: android.media.AudioAttributes$Builder setContentType(int)>(1)
++ $r4 = virtualinvoke $r4.<android.media.AudioAttributes$Builder: android.media.AudioAttributes$Builder setUsage(int)>(3)
++ $r5 = virtualinvoke $r4.<android.media.AudioAttributes$Builder: android.media.AudioAttributes build()>()
 + virtualinvoke $r0.<android.media.MediaPlayer: void setAudioAttributes(android.media.AudioAttributes)>($r5)
 + goto <label_next>
 + <label_original>
