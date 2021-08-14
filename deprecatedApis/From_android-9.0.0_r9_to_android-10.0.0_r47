@@ -118,32 +118,32 @@
 [No-Documentation]<android.app.TaskStackListener: void onTaskMovedToFront(int)>    ---->    <android.app.TaskStackListener: void onTaskMovedToFront(ActivityManager.RunningTaskInfo)>
 [ComplexFix]<android.content.res.Resources: Movie getMovie(int)>    ---->    <android.graphics.drawable.AnimatedImageDrawable>
 [REMOVED]<android.nfc.NfcAdapter: boolean isNdefPushEnabled()> 
-<android.graphics.RenderNode: boolean setLayerType(int)>
-<android.app.InstantAppResolverService: void onGetInstantAppIntentFilter(Intent,int[],String,InstantAppResolutionCallback)>    ---->    #onGetInstantAppIntentFilter(Intent, int[], UserHandle,  String, InstantAppResolutionCallback)
-<android.inputmethodservice.InputMethodService: void onViewClicked(boolean)>    ---->    View
-<com.android.systemui.bubbles.BubbleStackView: void setExpandedBubble(String)>    ---->    
-<android.net.ConnectivityManager: NetworkInfo getNetworkInfo(Network)>    ---->    NetworkInfo [https://developer.android.com/reference/android/net/NetworkInfo]
-<android.media.ThumbnailUtils: Bitmap createAudioThumbnail(String,int)>    ---->    #createAudioThumbnail(File, Size, CancellationSignal)
-<android.database.sqlite.SQLiteOpenHelper: void setIdleConnectionTimeout(long)>    ---->    SQLiteDatabase.OpenParams.Builder#setIdleConnectionTimeout(long)  
-<android.view.ViewDebug: AutoCloseable startRenderingCommandsCapture(View,Executor,Function<Picture, Boolean>)>
-<android.service.autofill.AutofillFieldClassificationService: float[][] onGetScores(String,Bundle,List<AutofillValue>,List<String>)>
-<com.android.systemui.shared.recents.model.Task: void setWindowingMode(int)>    ---->    
-<android.telephony.UiccSlotInfo: void <init>(boolean,boolean,String,int,int,boolean)>    ---->    
-<android.telephony.SignalStrength: int getTdScdmaLevel()>
-<android.telephony.TelephonyManager: void setCarrierTestOverride(String,String,String,String,String,String,String)>
-<android.telephony.SignalStrength: int getTdScdmaDbm()>
-<android.telephony.SignalStrength: int getLteDbm()>
-<android.net.wifi.WifiManager: boolean isScanAlwaysAvailable()>    ---->    
-<android.media.ThumbnailUtils: void createThumbnailFromEXIF(String,int,int,SizedThumbnailBitmap)>    ---->    
-<android.net.shared.LinkPropertiesParcelableUtil: LinkProperties toStableParcelable(LinkProperties)>    ---->    
-<android.app.Notification.WearableExtender: WearableExtender setDisplayIntent(PendingIntent)>    ---->    
-<android.app.AppOpsManager: int checkOp(String,int,String)>    ---->    #unsafeCheckOp(String, int, String)
-<android.location.LocationManager: void clearTestProviderLocation(String)>    ---->    
-<android.app.ActivityManager: ParceledListSlice<GrantedUriPermission> getGrantedUriPermissions(String)>
-<android.net.NetworkUtils: int netmaskToPrefixLength(Inet4Address)>
-<android.os.Environment: File getExternalStorageDirectory()>    ---->    
-<android.telephony.SignalStrength: int getGsmLevel()>
-<android.app.AppOpsManager: int checkOpNoThrow(String,int,String)>    ---->    #unsafeCheckOpNoThrow(String, int, String)
+[Verified]<android.graphics.RenderNode: boolean setLayerType(int)>  ---->   <android.graphics.RenderNode: boolean getUseCompositingLayer()> 
+[No-Documentation]<android.app.InstantAppResolverService: void onGetInstantAppIntentFilter(Intent,int[],String,InstantAppResolutionCallback)>    ---->    <android.app.InstantAppResolverService: void onGetInstantAppIntentFilter(Intent, int[], UserHandle,  String, InstantAppResolutionCallback)>
+[ComplexFix]<android.inputmethodservice.InputMethodService: void onViewClicked(boolean)>    ---->    "on-going input is interrupted": <android.inputmethodservice.InputMethodService: void onFinishInput()>
+[No-Documentation]<com.android.systemui.bubbles.BubbleStackView: void setExpandedBubble(String)>    ---->    setSelectedBubble(Bubble) + setExpanded(true) 
+[REMOVED]<android.net.ConnectivityManager: NetworkInfo getNetworkInfo(Network)>   
+[Verified]<android.media.ThumbnailUtils: Bitmap createAudioThumbnail(String,int)>    ---->    <android.media.ThumbnailUtils: Bitmap createAudioThumbnail(File, Size, CancellationSignal)>
+[REMOVED]<android.database.sqlite.SQLiteOpenHelper: void setIdleConnectionTimeout(long)>   
+[HIDDEN]<android.view.ViewDebug: AutoCloseable startRenderingCommandsCapture(View,Executor,Function<Picture, Boolean>)>   ---->   <android.view.ViewDebug: AutoCloseable startRenderingCommandsCapture(View, Executor, Callable)>
+[HIDDEN]<android.service.autofill.AutofillFieldClassificationService: float[][] onGetScores(String,Bundle,List<AutofillValue>,List<String>)>
+[No-Documentation]<com.android.systemui.shared.recents.model.Task: void setWindowingMode(int)>    ---->    
+[REMOVED]<android.telephony.UiccSlotInfo: void <init>(boolean,boolean,String,int,int,boolean)>    ---->    
+[Verified]<android.telephony.SignalStrength: int getTdScdmaLevel()>    ---->    <android.telephony.CellSignalStrengthTdscdma: int getLevel()>
+[HIDDEN]<android.telephony.TelephonyManager: void setCarrierTestOverride(String,String,String,String,String,String,String)>
+[Verified]<android.telephony.SignalStrength: int getTdScdmaDbm()>   ---->    <android.telephony.CellSignalStrengthTdscdma: int getDbm()>
+[Verified]<android.telephony.SignalStrength: int getLteDbm()>   ---->     <android.telephony.CellSignalStrengthLte: int getDbm()>
+[REMOVED]<android.net.wifi.WifiManager: boolean isScanAlwaysAvailable()>      
+[No-Documentation]<android.media.ThumbnailUtils: void createThumbnailFromEXIF(String,int,int,SizedThumbnailBitmap)>      
+[REMOVED]<android.net.shared.LinkPropertiesParcelableUtil: LinkProperties toStableParcelable(LinkProperties)>    "No longer necessay"
+[REMOVED]<android.app.Notification.WearableExtender: WearableExtender setDisplayIntent(PendingIntent)>    "No longer supported"
+[Verified]<android.app.AppOpsManager: int checkOp(String,int,String)>    ---->   <android.app.AppOpsManager: int unsafeCheckOp(String, int, String)>
+[REMOVED]<android.location.LocationManager: void clearTestProviderLocation(String)>    
+[HIDDEN]<android.app.ActivityManager: ParceledListSlice<GrantedUriPermission> getGrantedUriPermissions(String)>
+[Suggested Replacement Not Found]<android.net.NetworkUtils: int netmaskToPrefixLength(Inet4Address)>
+[Verified]<android.os.Environment: File getExternalStorageDirectory()>    ---->   <android.content.Context: File getExternalFilesDir(String)>
+[Verified]<android.telephony.SignalStrength: int getGsmLevel()>    ---->     <android.telephony.CellSignalStrengthGsm: int getLevel()>
+[Verified]<android.app.AppOpsManager: int checkOpNoThrow(String,int,String)>    ---->    <android.app.AppOpsManager: int unsafeCheckOpNoThrow(String, int, String)>
 <android.content.pm.PermissionGroupInfo: void <init>(PermissionGroupInfo)>    ---->    
 <android.telephony.SignalStrength: int getTdScdmaAsuLevel()>
 <android.media.ThumbnailUtils: Bitmap createVideoThumbnail(String,int)>    ---->    #createVideoThumbnail(File, Size, CancellationSignal)
@@ -317,7 +317,7 @@
 <android.net.NetworkUtils: InetAddress numericToInetAddress(String)>
 <android.net.NetworkUtils: int inetAddressToInt(Inet4Address)>    ---->    Inet4AddressUtils#inet4AddressToIntHTH(Inet4Address)
 <android.telephony.ServiceState: void <init>(Parcel)>    ---->    #ServiceState()
-<android.database.sqlite.SQLiteDatabase.OpenParams.Builder: Builder setIdleConnectionTimeout(long)>    ---->    
+[REMOVED]<android.database.sqlite.SQLiteDatabase.OpenParams.Builder: Builder setIdleConnectionTimeout(long)>    
 <android.net.wifi.aware.DiscoverySession: NetworkSpecifier createNetworkSpecifierPmk(PeerHandle,byte[])>
 <android.app.backup.BackupTransport: String dataManagementLabel()>    ---->    #dataManagementIntentLabel()
 <android.telecom.TelecomManager: void acceptRingingCall(int)>    ---->    InCallService
