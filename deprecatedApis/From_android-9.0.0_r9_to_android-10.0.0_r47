@@ -179,21 +179,21 @@
 [REMOVED]<android.os.Environment: File maybeTranslateEmulatedPathToInternal(File)>
 [REMOVED]<android.media.MediaFile: boolean isDrmFileType(int)>    ---->    
 [Verfied, REMOVED]<android.app.ActivityManager: boolean isRunningInTestHarness()>    ---->    <android.app.ActivityManager: boolean isRunningInUserTestHarness()>
-<android.telephony.TelephonyManager: boolean isRadioOn()>
-<android.media.MediaFile: int getFileTypeForMimeType(String)>    ---->    
-<android.app.prediction.AppTarget: void <init>(AppTargetId,ShortcutInfo,String)>
-<com.android.systemui.statusbar.StatusBarStateControllerImpl: void addCallback(StateListener,int)>    ---->    
-<android.provider.MediaStore: Uri createPending(Context,PendingParams)>
-<android.telephony.PhoneNumberUtils: boolean isPotentialEmergencyNumber(String,String)>
-<com.android.internal.widget.LockPatternUtils: String patternToString(Cell>)>    ---->    patternToByteArray
-<com.android.internal.widget.LockPatternUtils: Cell> stringToPattern(String)>    ---->    
-<android.view.textclassifier.TextClassifier.EntityConfig: EntityConfig createWithExplicitEntityList(Collection<String>)>    ---->    Builder
-<com.android.server.backup.BackupManagerService: String selectBackupTransport(int,String)>    ---->    #selectBackupTransportAsync(ComponentName,  ISelectBackupTransportCallback)
-<android.media.MediaFile: boolean isAudioFileType(int)>    ---->    
-<android.content.pm.PermissionInfo: void <init>()>    ---->    
-<android.bluetooth.BluetoothHealth: boolean unregisterAppConfiguration(BluetoothHealthAppConfiguration)>    ---->    <android.bluetooth.BluetoothGatt>, <android.bluetooth.BluetoothAdapter: BluetoothServerSocket listenUsingL2capChannel()>, <android.bluetooth.BluetoothDevice: BluetoothSocket createL2capChannel(int)>, 
-<android.nfc.NfcAdapter: void setBeamPushUrisCallback(CreateBeamUrisCallback,Activity)>    ---->    
-<android.net.wifi.WifiManager: boolean isDeviceToApRttSupported()>    ---->    android.content.pm.PackageManager#hasSystemFeature(String)
+[Verified]<android.telephony.TelephonyManager: boolean isRadioOn()>   ---->    <android.telephony.TelephonyManager: ServiceState getServiceState()>
+[REMOVED]<android.media.MediaFile: int getFileTypeForMimeType(String)>     
+[HIDDEN]<android.app.prediction.AppTarget: void <init>(AppTargetId,ShortcutInfo,String)>
+[REMOVED]<com.android.systemui.statusbar.StatusBarStateControllerImpl: void addCallback(StateListener,int)>    
+[REMOVED]<android.provider.MediaStore: Uri createPending(Context,PendingParams)>
+[Suggested Replacement Not Found]<android.telephony.PhoneNumberUtils: boolean isPotentialEmergencyNumber(String,String)>
+[Verified]<com.android.internal.widget.LockPatternUtils: String patternToString(Cell>)>    ---->    <com.android.internal.widget.LockPatternUtils: byte[] patternToByteArray(List<LockPatternView.Cell>)>
+[Verified]<com.android.internal.widget.LockPatternUtils: Cell> stringToPattern(String)>    ---->    <com.android.internal.widget.LockPatternUtils: List<LockPatternView.Cell>  byteArrayToPattern(byte[])>
+[Verified]<android.view.textclassifier.TextClassifier.EntityConfig: EntityConfig createWithExplicitEntityList(Collection<String>)>    ---->    <android.view.textclassifier.TextClassifier.EntityConfig.Builder: TextClassifier.EntityConfig build()>
+[Suggested Replacement Not Found]<com.android.server.backup.BackupManagerService: String selectBackupTransport(int,String)>    ---->    #selectBackupTransportAsync(ComponentName,  ISelectBackupTransportCallback)
+[REMOVED]<android.media.MediaFile: boolean isAudioFileType(int)>    ---->    
+[REMOVED]<android.content.pm.PermissionInfo: void <init>()>    ---->    
+[ComplexFix]<android.bluetooth.BluetoothHealth: boolean unregisterAppConfiguration(BluetoothHealthAppConfiguration)>    ---->    <android.bluetooth.BluetoothGatt>, <android.bluetooth.BluetoothAdapter: BluetoothServerSocket listenUsingL2capChannel()>, <android.bluetooth.BluetoothDevice: BluetoothSocket createL2capChannel(int)>, 
+[REMOVED]<android.nfc.NfcAdapter: void setBeamPushUrisCallback(CreateBeamUrisCallback,Activity)>    ---->    
+<android.net.wifi.WifiManager: boolean isDeviceToApRttSupported()>    ---->    <android.content.pm.PackageManager: hasSystemFeature(String)
 <android.net.NetworkInfo: String getExtraInfo()>    ---->    
 <android.os.PowerManager: void wakeUp(long)>
 <android.bluetooth.BluetoothHealthAppConfiguration: String getName()>    ---->    <android.bluetooth.BluetoothGatt>, <android.bluetooth.BluetoothAdapter: BluetoothServerSocket listenUsingL2capChannel()>, <android.bluetooth.BluetoothDevice: BluetoothSocket createL2capChannel(int)>, 
@@ -232,7 +232,7 @@
 <android.net.wifi.WifiManager: int addNetwork(WifiConfiguration)>    ---->    WifiNetworkSpecifier.Builder#build()
 <android.net.ConnectivityManager: NetworkInfo getActiveNetworkInfo()>    ---->    NetworkInfo
 <android.transition.TransitionValues: void <init>()>    ---->    #TransitionValues(View)
-<android.telephony.PhoneNumberUtils: boolean isPotentialEmergencyNumber(String)>
+[Suggested Replacement Not Found]<android.telephony.PhoneNumberUtils: boolean isPotentialEmergencyNumber(String)>
 <android.media.AudioTrack: void removeOnRoutingChangedListener(OnRoutingChangedListener)>    ---->    AudioRouting.OnRoutingChangedListener
 <android.bluetooth.BluetoothHealth: boolean disconnectChannel(BluetoothDevice,BluetoothHealthAppConfiguration,int)>    ---->    <android.bluetooth.BluetoothGatt>, <android.bluetooth.BluetoothAdapter: BluetoothServerSocket listenUsingL2capChannel()>, <android.bluetooth.BluetoothDevice: BluetoothSocket createL2capChannel(int)>, 
 <android.telephony.SignalStrength: int getWcdmaAsuLevel()>
@@ -367,7 +367,7 @@
 <android.bluetooth.BluetoothHealthAppConfiguration: int getDataType()>    ---->    <android.bluetooth.BluetoothGatt>, <android.bluetooth.BluetoothAdapter: BluetoothServerSocket listenUsingL2capChannel()>, <android.bluetooth.BluetoothDevice: BluetoothSocket createL2capChannel(int)>, 
 <android.media.MediaScanner.MyMediaScannerClient: int getFileTypeFromDrm(String)>    ---->    
 <android.content.pm.PackageManager: void clearPackagePreferredActivities(String)>    ---->    #resolveActivity
-<android.telephony.PhoneNumberUtils: boolean isPotentialEmergencyNumber(int,String,String)>
+[Suggested Replacement Not Found]<android.telephony.PhoneNumberUtils: boolean isPotentialEmergencyNumber(int,String,String)>
 <android.hardware.hdmi.HdmiControlManager: void requestRemoteDeviceToBecomeActiveSource(HdmiDeviceInfo)>
 <android.view.animation.Animation: boolean getDetachWallpaper()>    ---->    
 <android.graphics.RecordingCanvas: void callDrawGLFunction2(long)>
