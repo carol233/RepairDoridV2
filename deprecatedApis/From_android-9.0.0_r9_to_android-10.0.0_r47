@@ -66,54 +66,58 @@
 <android.media.ThumbnailUtils: ParcelFileDescriptor makeInputStream(Uri,ContentResolver)>   
 [No-Documentation]<android.media.ThumbnailUtils: int computeInitialSampleSize(Options,int,int)>    ---->    
 [Verified]<android.widget.PopupWindow: void setLayoutInScreenEnabled(boolean)>   ---->   <android.widget.PopupWindow: void setIsLaidOutInScreen(boolean)>
-[Hiden]<android.hardware.hdmi.HdmiControlManager: boolean isRemoteDeviceConnected(HdmiDeviceInfo)>  ---->   android.hardware.hdmi.HdmiControlManager: boolean isDeviceConnected(HdmiDeviceInfo)>
+[HIDDEN]<android.hardware.hdmi.HdmiControlManager: boolean isRemoteDeviceConnected(HdmiDeviceInfo)>  ---->   android.hardware.hdmi.HdmiControlManager: boolean isDeviceConnected(HdmiDeviceInfo)>
 [Verified]<android.net.NetworkInfo: DetailedState getDetailedState()>    ---->    <android.net.ConnectivityManager.NetworkCallback>
 [ComplexFix]<android.app.DownloadManager.Request: void allowScanningByMediaScanner()>    ---->    Context#getExternalFilesDir(String)
 [REMOVED]<com.android.server.pm.ApexManager: PackageInfo getPackageInfoForApexName(String)>    
 [No-Documentation]<com.android.systemui.shared.recents.model.Task: void addCallback(TaskCallbacks)>    ---->    
-[Hiden]<android.content.ContentProviderClient: void releaseQuietly(ContentProviderClient)>
+[HIDDEN]<android.content.ContentProviderClient: void releaseQuietly(ContentProviderClient)>
 [Verified]<android.telephony.SignalStrength: int getEvdoDbm()>    ---->    <android.telephony.CellSignalStrengthCdma: int getEvdoDbm()>
 [ComplexFix]<android.bluetooth.BluetoothHealthCallback: void onHealthAppConfigurationStatusChange(BluetoothHealthAppConfiguration,int)>    ---->    <android.bluetooth.BluetoothGatt>, <android.bluetooth.BluetoothAdapter: BluetoothServerSocket listenUsingL2capChannel()>, <android.bluetooth.BluetoothDevice: BluetoothSocket createL2capChannel(int)>, 
-[Hiden]<android.os.PowerManager: void wakeUp(long,String)>   ----> <android.os.PowerManager: void wakeUp(long,int,String)>
-[Hiden]<android.app.prediction.AppTarget.Builder: Builder setTarget(ShortcutInfo)>
-[Hiden]<android.security.keystore.recovery.WrappedApplicationKey: void <init>(String,byte[])>
+[HIDDEN]<android.os.PowerManager: void wakeUp(long,String)>   ----> <android.os.PowerManager: void wakeUp(long,int,String)>
+[HIDDEN]<android.app.prediction.AppTarget.Builder: Builder setTarget(ShortcutInfo)>
+[HIDDEN]<android.security.keystore.recovery.WrappedApplicationKey: void <init>(String,byte[])>
 [Verified]<android.telephony.SignalStrength: int getWcdmaLevel()>   ---->   <android.telephony.CellSignalStrengthWcdma: int getDbm()>
 [Verified]<android.net.wifi.WifiManager: boolean disableNetwork(int)>    
 ---->    "trigger connection to a Wi-Fi network" : <android.netwifi.WifiNetworkSpecifier.Builder: WifiNetworkSpecifier build()>
 ---->    "for new API to add Wi-Fi networks for consideration when auto-connecting to wifi" : <android.net.wifi.WifiManager: int addNetworkSuggestions(List<WifiNetworkSuggestion>)>, <android.net.wifi.WifiManager: int removeNetworkSuggestions(List<WifiNetworkSuggestion>)> 
 [REMOVED]<com.android.internal.app.SimpleIconFactory: Bitmap createAppBadgedIconBitmap(Drawable,Bitmap)>    ---->    
-[Hiden]<android.app.ActivityManager: void clearGrantedUriPermissions(String)>
+[HIDDEN]<android.app.ActivityManager: void clearGrantedUriPermissions(String)>
 [ComplexFix]<android.graphics.drawable.Drawable: int getOpacity()>    ---->    <android.graphics.PixelFormat>
 [Verified]<android.telephony.SignalStrength: int getCdmaDbm()>    ---->    <android.telephony.CellSignalStrengthCdma: int getCdmaDbm()>
-<android.provider.MediaStore: void trash(Context,Uri,long)>
-<android.provider.MediaStore: void trash(Context,Uri)>
-<android.telephony.SignalStrength: void setFromNotifierBundle(Bundle)>
-<android.telephony.data.ApnSetting.Builder: Builder setProxyAddress(InetAddress)>    ---->    #setProxyAddress(String)
-<android.provider.MediaStore: Set<String> getAllVolumeNames(Context)>
-<android.telephony.PhoneNumberUtils: boolean isEmergencyNumber(int,String)>
-<com.android.server.backup.UserBackupManagerService: String selectBackupTransport(String)>    ---->    #selectBackupTransportAsync(ComponentName,  ISelectBackupTransportCallback)
-<android.app.DownloadManager.Request: Request setVisibleInDownloadsUi(boolean)>    ---->    Environment#getExternalStoragePublicDirectory(String)
-<android.telephony.SignalStrength: int getAsuLevel()>
-<android.telephony.data.ApnSetting.Builder: Builder setMmsProxyAddress(InetAddress)>    ---->    #setMmsProxyAddress(String)
-<android.telephony.PhoneNumberUtils: boolean isLocalEmergencyNumber(Context,String)>    ---->    TelephonyManager#isEmergencyNumber(String)
-<android.net.wifi.WifiManager: boolean reassociate()>    ---->    WifiNetworkSpecifier.Builder#build()
-<android.app.backup.RestoreSession: int restoreSome(long,RestoreObserver,BackupManagerMonitor,String[])>
-<android.net.wifi.WifiManager: boolean removeNetwork(int)>    ---->    WifiNetworkSpecifier.Builder#build()
-<android.os.storage.StorageManager: File maybeTranslateEmulatedPathToInternal(File)>
-<android.nfc.NfcAdapter: void setBeamPushUris(Uri[],Activity)>    ---->    
-<android.location.LocationManager: boolean setProviderEnabledForUser(String,boolean,UserHandle)>
-<android.app.KeyguardManager: Intent createConfirmDeviceCredentialIntent(CharSequence,CharSequence)>    ---->    BiometricPrompt.Builder#setDeviceCredentialAllowed(boolean)
-<android.app.prediction.AppTarget: void <init>(AppTargetId,String,String,UserHandle)>
-<android.app.Activity: void onStateNotSaved()>    ---->    
-<android.app.DownloadManager: long addCompletedDownload(String,String,boolean,String,String,long,boolean,boolean,Uri,Uri)>
-<android.content.pm.PermissionInfo: void <init>(PermissionInfo)>    ---->    
-<android.view.inputmethod.InputMethodManager: void viewClicked(View)>    ---->    View  
-<android.service.notification.ConditionProviderService: void notifyConditions(Condition)>    ---->    android.app.NotificationManager#setAutomaticZenRuleState(String, Condition)
-<android.view.animation.Animation: void setDetachWallpaper(boolean)>    ---->    
-<android.app.TaskStackListener: void onTaskDescriptionChanged(int,TaskDescription)>    ---->    #onTaskDescriptionChanged(ActivityManager.RunningTaskInfo)
-<android.app.TaskStackListener: void onTaskMovedToFront(int)>    ---->    #onTaskMovedToFront(ActivityManager.RunningTaskInfo)
-<android.content.res.Resources: Movie getMovie(int)>    ---->    android.graphics.drawable.AnimatedImageDrawable
-<android.nfc.NfcAdapter: boolean isNdefPushEnabled()>    ---->    
+[Verified]<android.provider.MediaStore: void trash(Context,Uri,long)>  ---->   <android.provider.MediaStore: PendingIntent createTrashRequest(ContentResolver ,Collection<Uri>,boolean)> 
+[Verified]<android.provider.MediaStore: void trash(Context,Uri)>    ---->   <android.provider.MediaStore: PendingIntent createTrashRequest(ContentResolver ,Collection<Uri>,boolean)> 
+[Incorrect-Documentation]<android.telephony.SignalStrength: void setFromNotifierBundle(Bundle)>
+[Verified]<android.telephony.data.ApnSetting.Builder: Builder setProxyAddress(InetAddress)>    ---->    <android.telephony.data.ApnSetting.Builder: Builder setProxyAddress(String)>
+[REMOVED]<android.provider.MediaStore: Set<String> getAllVolumeNames(Context)>
+[Verified]<android.telephony.PhoneNumberUtils: boolean isEmergencyNumber(int,String)>   ---->   <android.telephony.TelephonyManager: boolean isEmergencyNumber(String)> 
+[Verified]<com.android.server.backup.UserBackupManagerService: String selectBackupTransport(String)>    ---->    <com.android.server.backup.UserBackupManagerService: void selectBackupTransportAsync(ComponentName,  ISelectBackupTransportCallback)>
+[REMOVED]<android.app.DownloadManager.Request: Request setVisibleInDownloadsUi(boolean)>    ---->    Environment#getExternalStoragePublicDirectory(String)
+[Verified]<android.telephony.SignalStrength: int getAsuLevel()>   ---->  <android.telephony.CellSignalStrength: int getAsuLevel()> 
+[Verified]<android.telephony.data.ApnSetting.Builder: Builder setMmsProxyAddress(InetAddress)>    ---->    <android.telephony.data.ApnSetting.Builder: Builder setMmsProxyAddress(String)
+[Verified]<android.telephony.PhoneNumberUtils: boolean isLocalEmergencyNumber(Context,String)>    ---->    <android.telephony.TelephonyManager: boolean isEmergencyNumber(String)> 
+[ComplexFix]<android.net.wifi.WifiManager: boolean reassociate()>    
+---->   "new mechanism to trigger connection to a Wi-Fi network" :  <android.net.wifi.WifiNetworkSpecifier.Builder: WifiNetworkSpecifier build()>
+---->   "new API to add Wi-Fi networks":  <android.net.wifi.WifiManager: int addNetworkSuggestions(List<WifiNetworkSuggestion>)>, <android.net.wifi.WifiManager: int removeNetworkSuggestions(List<WifiNetworkSuggestion>)>
+[HIDDEN]<android.app.backup.RestoreSession: int restoreSome(long,RestoreObserver,BackupManagerMonitor,String[])>
+[ComplexFix]<android.net.wifi.WifiManager: boolean removeNetwork(int)> 
+---->   "new mechanism to trigger connection to a Wi-Fi network" :  <android.net.wifi.WifiNetworkSpecifier.Builder: WifiNetworkSpecifier build()>
+---->   "new API to add Wi-Fi networks for consideration when auto-connecting to wifi.":  <android.net.wifi.WifiManager: int addNetworkSuggestions(List<WifiNetworkSuggestion>)>, <android.net.wifi.WifiManager: int removeNetworkSuggestions(List<WifiNetworkSuggestion>)>
+[HIDDEN]<android.os.storage.StorageManager: File maybeTranslateEmulatedPathToInternal(File)> 
+[REMOVED]<android.nfc.NfcAdapter: void setBeamPushUris(Uri[],Activity)>    "this feature is deprecated. File sharing can work using other technology like Bluetooth."
+[HIDDEN]<android.location.LocationManager: boolean setProviderEnabledForUser(String,boolean,UserHandle)>
+[Verified]<android.app.KeyguardManager: Intent createConfirmDeviceCredentialIntent(CharSequence,CharSequence)>    ---->    <android.hardware.biometrics.BiometricPrompt.Builder: BiometricPrompt.Builder setAllowedAuthenticators(int)>
+[No-Documentation]<android.app.prediction.AppTarget: void <init>(AppTargetId,String,String,UserHandle)>
+[REMOVED]<android.app.Activity: void onStateNotSaved()>    
+[ComplexFix]<android.app.DownloadManager: long addCompletedDownload(String,String,boolean,String,String,long,boolean,boolean,Uri,Uri)>   ----> <android.provider.MediaStore.Downloads>
+[REMOVED]<android.content.pm.PermissionInfo: void <init>(PermissionInfo)>    ---->    
+[ComplexFix]<android.view.inputmethod.InputMethodManager: void viewClicked(View)>    ---->    <android.webkit.WebView>  
+[Verified]<android.service.notification.ConditionProviderService: void notifyConditions(Condition)>    ---->    <android.app.NotificationManager: void setAutomaticZenRuleState(String, Condition)>
+[REMOVED]<android.view.animation.Animation: void setDetachWallpaper(boolean)>     
+[No-Documentation]<android.app.TaskStackListener: void onTaskDescriptionChanged(int,TaskDescription)>    ---->    <android.app.TaskStackListener: void onTaskDescriptionChanged(ActivityManager.RunningTaskInfo)>
+[No-Documentation]<android.app.TaskStackListener: void onTaskMovedToFront(int)>    ---->    <android.app.TaskStackListener: void onTaskMovedToFront(ActivityManager.RunningTaskInfo)>
+[ComplexFix]<android.content.res.Resources: Movie getMovie(int)>    ---->    <android.graphics.drawable.AnimatedImageDrawable>
+[REMOVED]<android.nfc.NfcAdapter: boolean isNdefPushEnabled()> 
 <android.graphics.RenderNode: boolean setLayerType(int)>
 <android.app.InstantAppResolverService: void onGetInstantAppIntentFilter(Intent,int[],String,InstantAppResolutionCallback)>    ---->    #onGetInstantAppIntentFilter(Intent, int[], UserHandle,  String, InstantAppResolutionCallback)
 <android.inputmethodservice.InputMethodService: void onViewClicked(boolean)>    ---->    View
