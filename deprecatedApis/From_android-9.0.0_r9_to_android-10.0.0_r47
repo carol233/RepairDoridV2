@@ -64,25 +64,27 @@
 [REMOVED]<android.media.ThumbnailUtils: Bitmap createAudioThumbnail(String,int)>    ---->    <android.media.ThumbnailUtils: Bitmap createAudioThumbnail(File, Size, CancellationSignal)>
 <com.android.internal.widget.LockPatternChecker: AsyncTask<?, ?, ?> verifyPassword(LockPatternUtils,String,long,int,OnVerifyCallback)>    ---->    
 <android.media.ThumbnailUtils: ParcelFileDescriptor makeInputStream(Uri,ContentResolver)>   
-<android.media.ThumbnailUtils: int computeInitialSampleSize(Options,int,int)>    ---->    
+[No-Documentation]<android.media.ThumbnailUtils: int computeInitialSampleSize(Options,int,int)>    ---->    
 [Verified]<android.widget.PopupWindow: void setLayoutInScreenEnabled(boolean)>   ---->   <android.widget.PopupWindow: void setIsLaidOutInScreen(boolean)>
-<android.hardware.hdmi.HdmiControlManager: boolean isRemoteDeviceConnected(HdmiDeviceInfo)>
-<android.net.NetworkInfo: DetailedState getDetailedState()>    ---->    android.net.ConnectivityManager.NetworkCallback
-<android.app.DownloadManager.Request: void allowScanningByMediaScanner()>    ---->    Context#getExternalFilesDir(String)
-<com.android.server.pm.ApexManager: PackageInfo getPackageInfoForApexName(String)>    ---->    
-<com.android.systemui.shared.recents.model.Task: void addCallback(TaskCallbacks)>    ---->    
-<android.content.ContentProviderClient: void releaseQuietly(ContentProviderClient)>
-<android.telephony.SignalStrength: int getEvdoDbm()>    ---->    android.telephony#CellSignalStrengthCdma
-<android.bluetooth.BluetoothHealthCallback: void onHealthAppConfigurationStatusChange(BluetoothHealthAppConfiguration,int)>    ---->    BluetoothGatt
-<android.os.PowerManager: void wakeUp(long,String)>
-<android.app.prediction.AppTarget.Builder: Builder setTarget(ShortcutInfo)>
-<android.security.keystore.recovery.WrappedApplicationKey: void <init>(String,byte[])>
-<android.telephony.SignalStrength: int getWcdmaLevel()>
-<android.net.wifi.WifiManager: boolean disableNetwork(int)>    ---->    WifiNetworkSpecifier.Builder#build()
-<com.android.internal.app.SimpleIconFactory: Bitmap createAppBadgedIconBitmap(Drawable,Bitmap)>    ---->    
-<android.app.ActivityManager: void clearGrantedUriPermissions(String)>
-<android.graphics.drawable.Drawable: int getOpacity()>    ---->    android.graphics.PixelFormat
-<android.telephony.SignalStrength: int getCdmaDbm()>    ---->    android.telephony#CellSignalStrengthCdma
+[Hiden]<android.hardware.hdmi.HdmiControlManager: boolean isRemoteDeviceConnected(HdmiDeviceInfo)>  ---->   android.hardware.hdmi.HdmiControlManager: boolean isDeviceConnected(HdmiDeviceInfo)>
+[Verified]<android.net.NetworkInfo: DetailedState getDetailedState()>    ---->    <android.net.ConnectivityManager.NetworkCallback>
+[ComplexFix]<android.app.DownloadManager.Request: void allowScanningByMediaScanner()>    ---->    Context#getExternalFilesDir(String)
+[REMOVED]<com.android.server.pm.ApexManager: PackageInfo getPackageInfoForApexName(String)>    
+[No-Documentation]<com.android.systemui.shared.recents.model.Task: void addCallback(TaskCallbacks)>    ---->    
+[Hiden]<android.content.ContentProviderClient: void releaseQuietly(ContentProviderClient)>
+[Verified]<android.telephony.SignalStrength: int getEvdoDbm()>    ---->    <android.telephony.CellSignalStrengthCdma: int getEvdoDbm()>
+[ComplexFix]<android.bluetooth.BluetoothHealthCallback: void onHealthAppConfigurationStatusChange(BluetoothHealthAppConfiguration,int)>    ---->    <android.bluetooth.BluetoothGatt>, <android.bluetooth.BluetoothAdapter: BluetoothServerSocket listenUsingL2capChannel()>, <android.bluetooth.BluetoothDevice: BluetoothSocket createL2capChannel(int)>, 
+[Hiden]<android.os.PowerManager: void wakeUp(long,String)>   ----> <android.os.PowerManager: void wakeUp(long,int,String)>
+[Hiden]<android.app.prediction.AppTarget.Builder: Builder setTarget(ShortcutInfo)>
+[Hiden]<android.security.keystore.recovery.WrappedApplicationKey: void <init>(String,byte[])>
+[Verified]<android.telephony.SignalStrength: int getWcdmaLevel()>   ---->   <android.telephony.CellSignalStrengthWcdma: int getDbm()>
+[Verified]<android.net.wifi.WifiManager: boolean disableNetwork(int)>    
+---->    "trigger connection to a Wi-Fi network" : <android.netwifi.WifiNetworkSpecifier.Builder: WifiNetworkSpecifier build()>
+---->    "for new API to add Wi-Fi networks for consideration when auto-connecting to wifi" : <android.net.wifi.WifiManager: int addNetworkSuggestions(List<WifiNetworkSuggestion>)>, <android.net.wifi.WifiManager: int removeNetworkSuggestions(List<WifiNetworkSuggestion>)> 
+[REMOVED]<com.android.internal.app.SimpleIconFactory: Bitmap createAppBadgedIconBitmap(Drawable,Bitmap)>    ---->    
+[Hiden]<android.app.ActivityManager: void clearGrantedUriPermissions(String)>
+[ComplexFix]<android.graphics.drawable.Drawable: int getOpacity()>    ---->    <android.graphics.PixelFormat>
+[Verified]<android.telephony.SignalStrength: int getCdmaDbm()>    ---->    <android.telephony.CellSignalStrengthCdma: int getCdmaDbm()>
 <android.provider.MediaStore: void trash(Context,Uri,long)>
 <android.provider.MediaStore: void trash(Context,Uri)>
 <android.telephony.SignalStrength: void setFromNotifierBundle(Bundle)>
