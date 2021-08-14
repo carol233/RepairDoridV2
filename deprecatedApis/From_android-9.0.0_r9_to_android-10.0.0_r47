@@ -144,19 +144,19 @@
 [Verified]<android.os.Environment: File getExternalStorageDirectory()>    ---->   <android.content.Context: File getExternalFilesDir(String)>
 [Verified]<android.telephony.SignalStrength: int getGsmLevel()>    ---->     <android.telephony.CellSignalStrengthGsm: int getLevel()>
 [Verified]<android.app.AppOpsManager: int checkOpNoThrow(String,int,String)>    ---->    <android.app.AppOpsManager: int unsafeCheckOpNoThrow(String, int, String)>
-<android.content.pm.PermissionGroupInfo: void <init>(PermissionGroupInfo)>    ---->    
-<android.telephony.SignalStrength: int getTdScdmaAsuLevel()>
-<android.media.ThumbnailUtils: Bitmap createVideoThumbnail(String,int)>    ---->    #createVideoThumbnail(File, Size, CancellationSignal)
-<android.media.MediaFile: MediaFileType getFileType(String)>    ---->    
-<android.app.ActivityManager: int getMaxRecentTasksStatic()>
-<android.telephony.SignalStrength: int getGsmAsuLevel()>
-<android.app.AutomaticZenRule: void <init>(String,ComponentName,Uri,int,boolean)>    ---->    #AutomaticZenRule(String, ComponentName, ComponentName, Uri,  ZenPolicy, int, boolean)
-<com.android.location.provider.LocationProviderBase: void onDisable()>    ---->    
-<android.app.DownloadManager: long addCompletedDownload(String,String,boolean,String,String,long,boolean,boolean)>
-<android.location.LocationManager: void setTestProviderStatus(String,int,Bundle,long)>    ---->    
-<android.net.wifi.WifiManager: boolean isDeviceToDeviceRttSupported()>
-<com.android.internal.app.SimpleIconFactory: void recycle()>    ---->    
-<android.app.prediction.AppTarget.Builder: Builder setTarget(String,UserHandle)>
+[REMOVED]<android.content.pm.PermissionGroupInfo: void <init>(PermissionGroupInfo)>    ---->    
+[Verified]<android.telephony.SignalStrength: int getTdScdmaAsuLevel()>     ---->      <android.telephony.CellSignalStrengthTdscdma: int getAsuLevel()> 
+[Verified]<android.media.ThumbnailUtils: Bitmap createVideoThumbnail(String,int)>    ---->    <android.media.ThumbnailUtils: Bitmap createVideoThumbnail(File, Size, CancellationSignal)>
+[REMOVED]<android.media.MediaFile: MediaFileType getFileType(String)>
+[HIDDEN]<android.app.ActivityManager: int getMaxRecentTasksStatic()>  
+[Verified]<android.telephony.SignalStrength: int getGsmAsuLevel()>    ----->     <android.telephony.CellSignalStrengthGsm: int getAsuLevel()>
+[Verified]<android.app.AutomaticZenRule: void <init>(String,ComponentName,Uri,int,boolean)>    ---->    <android.app.AutomaticZenRule: void <init>AutomaticZenRule(String, ComponentName, ComponentName, Uri,  ZenPolicy, int, boolean)>
+[No-Documentation]<com.android.location.provider.LocationProviderBase: void onDisable()>    
+[ComplexFix]<android.app.DownloadManager: long addCompletedDownload(String,String,boolean,String,String,long,boolean,boolean)>  ----->     <android.provider.MediaStore.Downloads> 
+[REMOVED]<android.location.LocationManager: void setTestProviderStatus(String,int,Bundle,long)>    
+[Verified]<android.net.wifi.WifiManager: boolean isDeviceToDeviceRttSupported()>   ---->    <android.content.pm.PackageManager: boolean hasSystemFeature(String, int)>
+[REMOVED]<com.android.internal.app.SimpleIconFactory: void recycle()>    ---->     <iconloader>
+[HIDDEN]<android.app.prediction.AppTarget.Builder: Builder setTarget(String,UserHandle)>
 <android.telephony.PhoneNumberUtils: boolean isPotentialEmergencyNumber(int,String)>
 <android.graphics.RecordingCanvas: void drawGLFunctor2(long,Runnable)>
 <android.net.wifi.aware.DiscoverySession: NetworkSpecifier createNetworkSpecifierOpen(PeerHandle)>    ---->    WifiAwareNetworkSpecifier.Builder
