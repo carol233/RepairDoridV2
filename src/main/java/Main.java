@@ -1,5 +1,7 @@
 import soot.*;
 import soot.options.Options;
+
+import java.io.File;
 import java.util.Collections;
 
 public class Main {
@@ -7,19 +9,19 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-//        String SemanticPatchPath_os = args[0];
-//        String SemanticPatchPath_device = args[1];
-//        String SemanticPatchPath_callback = args[2];
-//        String androidJar = args[3];
-//        String APK = args[4];
-//        String logPath = args[5];
+        String SemanticPatchPath_os = args[0];
+        String SemanticPatchPath_device = args[1];
+        String SemanticPatchPath_callback = args[2];
+        String androidJar = args[3];
+        String APK = args[4];
+        String logPath = args[5];
 
-        String SemanticPatchPath_os = "OSPatches";
-        String SemanticPatchPath_device = "DevicePatches";
-        String SemanticPatchPath_callback = "CallBackPatches";
-        String androidJar = "/Users/yzha0544/Library/Android/sdk/platforms/";
-        String APK = "app_old/053E33F48962A81653C26E022AA2F3F40B791C417C740EB51308B624CA3813CE.apk";
-        String logPath = "ManualTestCSV/053E33F48962A81653C26E022AA2F3F40B791C417C740EB51308B624CA3813CE.apk.csv";
+//        String SemanticPatchPath_os = "OSPatches";
+//        String SemanticPatchPath_device = "DevicePatches";
+//        String SemanticPatchPath_callback = "CallBackPatches";
+//        String androidJar = "/Users/yzha0544/Library/Android/sdk/platforms/";
+//        String APK = "app_old/053E33F48962A81653C26E022AA2F3F40B791C417C740EB51308B624CA3813CE.apk";
+//        String logPath = "ManualTestCSV/053E33F48962A81653C26E022AA2F3F40B791C417C740EB51308B624CA3813CE.apk.csv";
 
         G.reset();
         //set options
@@ -35,7 +37,13 @@ public class Main {
         Options.v().set_include_all(true);
         //output options
         Options.v().set_output_format(Options.output_format_dex);
-        Options.v().set_output_dir("ManualTest");
+        Options.v().set_output_dir("RepairedAPK");
+
+        File folder = new File("RepairedAPK");
+        if (!folder.exists() && !folder.isDirectory()) {
+            folder.mkdir();
+        }
+
         //-force-overwrite
         Options.v().set_force_overwrite(true);
         Options.v().set_validate(true); // Validate Jimple bodies in each transformation pack
