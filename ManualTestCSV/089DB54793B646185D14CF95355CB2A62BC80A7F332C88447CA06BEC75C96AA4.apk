@@ -1,0 +1,84 @@
+Potential,<android.view.Display: int getHeight()>,OS,<com.unity3d.ads.UnityAds$1: void run()>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.unity3d.ads.UnityAds$1: void run()>,null,null,OSPatches/getWidth.patch
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.google.gvr.permissionsupport.TransitionVRActivity: void setImmersiveSticky()>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Localization,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.google.gvr.permissionsupport.TransitionVRActivity: void setImmersiveSticky()>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Success,null,OS,<com.google.gvr.permissionsupport.TransitionVRActivity: void setImmersiveSticky()>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,"<com.google.vr.cardboard.UiUtils: android.app.AlertDialog showImmersiveDialog(android.content.Context,android.app.AlertDialog)>",null,null,OSPatches/3_setSystemUiVisibility.patch
+Localization,<android.view.View: void setSystemUiVisibility(int)>,OS,"<com.google.vr.cardboard.UiUtils: android.app.AlertDialog showImmersiveDialog(android.content.Context,android.app.AlertDialog)>",null,null,OSPatches/3_setSystemUiVisibility.patch
+Success,null,OS,"<com.google.vr.cardboard.UiUtils: android.app.AlertDialog showImmersiveDialog(android.content.Context,android.app.AlertDialog)>",null,null,OSPatches/3_setSystemUiVisibility.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,"<com.google.vr.cardboard.UiUtils: android.app.AlertDialog showImmersiveDialog(android.content.Context,android.app.AlertDialog)>",null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,"<com.google.vr.cardboard.UiUtils: android.app.AlertDialog showImmersiveDialog(android.content.Context,android.app.AlertDialog)>",null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,"<com.google.vr.cardboard.UiUtils: android.app.AlertDialog showImmersiveDialog(android.content.Context,android.app.AlertDialog)>",null,null,DevicePatches/getWindow.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.google.vrtoolkit.cardboard.ScreenOnFlagHelper: void setKeepScreenOnFlag(boolean)>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.google.vrtoolkit.cardboard.ScreenOnFlagHelper: void setKeepScreenOnFlag(boolean)>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.google.vrtoolkit.cardboard.ScreenOnFlagHelper: void setKeepScreenOnFlag(boolean)>,null,null,DevicePatches/getWindow.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.vuforia.ar.pl.ODGR7Controller: boolean setStereo(boolean)>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.vuforia.ar.pl.ODGR7Controller: boolean setStereo(boolean)>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.vuforia.ar.pl.ODGR7Controller: boolean setStereo(boolean)>,null,null,DevicePatches/getWindow.patch
+Potential,<java.lang.Integer: int intValue()>,OS,<com.unity3d.ads.adunit.AdUnitRelativeLayout: android.util.SparseIntArray getEventCount(java.util.ArrayList)>,null,null,OSPatches/2_getCurrentMinute.patch
+Localization,<java.lang.Integer: int intValue()>,OS,<com.unity3d.ads.adunit.AdUnitRelativeLayout: android.util.SparseIntArray getEventCount(java.util.ArrayList)>,null,null,OSPatches/2_getCurrentMinute.patch
+Success,null,OS,<com.unity3d.ads.adunit.AdUnitRelativeLayout: android.util.SparseIntArray getEventCount(java.util.ArrayList)>,null,null,OSPatches/2_getCurrentMinute.patch
+Potential,<java.lang.Integer: int intValue()>,OS,<com.unity3d.ads.adunit.AdUnitRelativeLayout: android.util.SparseIntArray getEventCount(java.util.ArrayList)>,null,null,OSPatches/2_getCurrentHour.patch
+Localization,<java.lang.Integer: int intValue()>,OS,<com.unity3d.ads.adunit.AdUnitRelativeLayout: android.util.SparseIntArray getEventCount(java.util.ArrayList)>,null,null,OSPatches/2_getCurrentHour.patch
+Success,null,OS,<com.unity3d.ads.adunit.AdUnitRelativeLayout: android.util.SparseIntArray getEventCount(java.util.ArrayList)>,null,null,OSPatches/2_getCurrentHour.patch
+Potential,<android.content.ContentProviderClient: boolean release()>,OS,<com.google.vr.cardboard.VrParamsProviderFactory$ContentProviderClientHandle: void close()>,null,null,OSPatches/release.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.unity3d.ads.connectivity.ConnectivityMonitor: void connectionStatusChanged()>,null,null,OSPatches/getType.patch
+Localization,<android.net.NetworkInfo: int getType()>,OS,<com.unity3d.ads.connectivity.ConnectivityMonitor: void connectionStatusChanged()>,null,null,OSPatches/getType.patch
+Success,null,OS,<com.unity3d.ads.connectivity.ConnectivityMonitor: void connectionStatusChanged()>,null,null,OSPatches/getType.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.unity3d.ads.connectivity.ConnectivityMonitor: void initConnectionStatus()>,null,null,OSPatches/getType.patch
+Localization,<android.net.NetworkInfo: int getType()>,OS,<com.unity3d.ads.connectivity.ConnectivityMonitor: void initConnectionStatus()>,null,null,OSPatches/getType.patch
+Success,null,OS,<com.unity3d.ads.connectivity.ConnectivityMonitor: void initConnectionStatus()>,null,null,OSPatches/getType.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.vuforia.ar.pl.SurfaceManager: boolean retrieveGLSurfaceView()>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.vuforia.ar.pl.SurfaceManager: boolean retrieveGLSurfaceView()>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.vuforia.ar.pl.SurfaceManager: boolean retrieveGLSurfaceView()>,null,null,DevicePatches/getWindow.patch
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.google.gvr.keyboardsupport.TransitionVRActivity: void setImmersiveSticky()>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Localization,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.google.gvr.keyboardsupport.TransitionVRActivity: void setImmersiveSticky()>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Success,null,OS,<com.google.gvr.keyboardsupport.TransitionVRActivity: void setImmersiveSticky()>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.unity3d.ads.device.Device: boolean isUsingWifi()>,null,null,OSPatches/getType.patch
+Localization,<android.net.NetworkInfo: int getType()>,OS,<com.unity3d.ads.device.Device: boolean isUsingWifi()>,null,null,OSPatches/getType.patch
+Success,null,OS,<com.unity3d.ads.device.Device: boolean isUsingWifi()>,null,null,OSPatches/getType.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.vuforia.ar.pl.Camera1_Preview: android.hardware.Camera$Parameters getCameraParameters(android.hardware.Camera)>,null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.vuforia.ar.pl.Camera1_Preview: android.hardware.Camera$Parameters getCameraParameters(android.hardware.Camera)>,null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,<com.vuforia.ar.pl.Camera1_Preview: android.hardware.Camera$Parameters getCameraParameters(android.hardware.Camera)>,null,null,DevicePatches/setRecordingHint.patch
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.unity3d.player.UnityPlayer: void a(android.app.Activity)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Localization,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.unity3d.player.UnityPlayer: void a(android.app.Activity)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Success,null,OS,<com.unity3d.player.UnityPlayer: void a(android.app.Activity)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.unity3d.player.UnityPlayer: void a(android.app.Activity)>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.unity3d.player.UnityPlayer: void a(android.app.Activity)>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.unity3d.player.UnityPlayer: void a(android.app.Activity)>,null,null,DevicePatches/getWindow.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.unity3d.player.UnityPlayer: void l()>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.unity3d.player.UnityPlayer: void l()>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.unity3d.player.UnityPlayer: void l()>,null,null,DevicePatches/getWindow.patch
+Potential,<java.lang.Integer: int intValue()>,OS,"<com.unity3d.ads.request.WebRequestThread: void request(java.lang.String,com.unity3d.ads.request.WebRequest$RequestType,java.util.Map,java.lang.String,java.lang.Integer,java.lang.Integer,com.unity3d.ads.request.IWebRequestListener)>",null,null,OSPatches/2_getCurrentMinute.patch
+Localization,<java.lang.Integer: int intValue()>,OS,"<com.unity3d.ads.request.WebRequestThread: void request(java.lang.String,com.unity3d.ads.request.WebRequest$RequestType,java.util.Map,java.lang.String,java.lang.Integer,java.lang.Integer,com.unity3d.ads.request.IWebRequestListener)>",null,null,OSPatches/2_getCurrentMinute.patch
+Success,null,OS,"<com.unity3d.ads.request.WebRequestThread: void request(java.lang.String,com.unity3d.ads.request.WebRequest$RequestType,java.util.Map,java.lang.String,java.lang.Integer,java.lang.Integer,com.unity3d.ads.request.IWebRequestListener)>",null,null,OSPatches/2_getCurrentMinute.patch
+Potential,<java.lang.Integer: int intValue()>,OS,"<com.unity3d.ads.request.WebRequestThread: void request(java.lang.String,com.unity3d.ads.request.WebRequest$RequestType,java.util.Map,java.lang.String,java.lang.Integer,java.lang.Integer,com.unity3d.ads.request.IWebRequestListener)>",null,null,OSPatches/2_getCurrentHour.patch
+Localization,<java.lang.Integer: int intValue()>,OS,"<com.unity3d.ads.request.WebRequestThread: void request(java.lang.String,com.unity3d.ads.request.WebRequest$RequestType,java.util.Map,java.lang.String,java.lang.Integer,java.lang.Integer,com.unity3d.ads.request.IWebRequestListener)>",null,null,OSPatches/2_getCurrentHour.patch
+Success,null,OS,"<com.unity3d.ads.request.WebRequestThread: void request(java.lang.String,com.unity3d.ads.request.WebRequest$RequestType,java.util.Map,java.lang.String,java.lang.Integer,java.lang.Integer,com.unity3d.ads.request.IWebRequestListener)>",null,null,OSPatches/2_getCurrentHour.patch
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.unity3d.ads.adunit.AdUnitActivity: boolean setSystemUiVisibility(int)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.vuforia.ar.pl.DrawOverlayView: void addOverlay(android.app.Activity)>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.vuforia.ar.pl.DrawOverlayView: void addOverlay(android.app.Activity)>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.vuforia.ar.pl.DrawOverlayView: void addOverlay(android.app.Activity)>,null,null,DevicePatches/getWindow.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,"<com.vuforia.ar.pl.DrawOverlayView: void removeOverlay(android.app.Activity,android.view.View)>",null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,"<com.vuforia.ar.pl.DrawOverlayView: void removeOverlay(android.app.Activity,android.view.View)>",null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,"<com.vuforia.ar.pl.DrawOverlayView: void removeOverlay(android.app.Activity,android.view.View)>",null,null,DevicePatches/getWindow.patch
+Potential,<android.media.MediaPlayer: void setAudioStreamType(int)>,OS,<com.unity3d.player.p: void c()>,null,null,OSPatches/2_setAudioStreamType.patch
+Localization,<android.media.MediaPlayer: void setAudioStreamType(int)>,OS,<com.unity3d.player.p: void c()>,null,null,OSPatches/2_setAudioStreamType.patch
+Success,null,OS,<com.unity3d.player.p: void c()>,null,null,OSPatches/2_setAudioStreamType.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.unity3d.player.p: void onPrepared(android.media.MediaPlayer)>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.unity3d.player.p: void onPrepared(android.media.MediaPlayer)>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.unity3d.player.p: void onPrepared(android.media.MediaPlayer)>,null,null,DevicePatches/getWindow.patch
+Potential,"<android.webkit.WebViewClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",OS,"<com.unity3d.ads.webplayer.WebPlayer$WebPlayerClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",null,null,OSPatches/2_shouldOverrideUrLoading.patch
+Localization,"<android.webkit.WebViewClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",OS,"<com.unity3d.ads.webplayer.WebPlayer$WebPlayerClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",null,null,OSPatches/2_shouldOverrideUrLoading.patch
+Success,null,OS,"<com.unity3d.ads.webplayer.WebPlayer$WebPlayerClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",null,null,OSPatches/2_shouldOverrideUrLoading.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,"<com.google.vr.cardboard.AndroidNCompat: boolean setSustainedPerformanceMode(android.app.Activity,boolean)>",null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,"<com.google.vr.cardboard.AndroidNCompat: boolean setSustainedPerformanceMode(android.app.Activity,boolean)>",null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,"<com.google.vr.cardboard.AndroidNCompat: boolean setSustainedPerformanceMode(android.app.Activity,boolean)>",null,null,DevicePatches/getWindow.patch
+Potential,<android.content.ContentProviderClient: boolean release()>,OS,<com.google.vr.cardboard.ContentProviderVrParamsProvider: void close()>,null,null,OSPatches/release.patch
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.google.vr.cardboard.FullscreenMode: void setFullscreenModeFlags()>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Localization,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.google.vr.cardboard.FullscreenMode: void setFullscreenModeFlags()>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Success,null,OS,<com.google.vr.cardboard.FullscreenMode: void setFullscreenModeFlags()>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.vuforia.ar.pl.EpsonBT200Controller$1: void run()>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.vuforia.ar.pl.EpsonBT200Controller$1: void run()>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.vuforia.ar.pl.EpsonBT200Controller$1: void run()>,null,null,DevicePatches/getWindow.patch
+TimeRecord,null,null,null,23585,93398045,null

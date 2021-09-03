@@ -1,0 +1,57 @@
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.kikidi.koifreelwp.SplashScreen: void onCreate(android.os.Bundle)>,null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,<com.kikidi.koifreelwp.SplashScreen: void onCreate(android.os.Bundle)>,null,null,OSPatches/getColor.patch
+Success,null,OS,<com.kikidi.koifreelwp.SplashScreen: void onCreate(android.os.Bundle)>,null,null,OSPatches/getColor.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.bumptech.glide.request.target.ViewTarget$SizeDeterminer: android.graphics.Point getDisplayDimens()>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.bumptech.glide.request.target.ViewTarget$SizeDeterminer: android.graphics.Point getDisplayDimens()>,null,null,OSPatches/getWidth.patch
+Potential,<android.text.Html: android.text.Spanned fromHtml(java.lang.String)>,OS,<com.kikidi.koifreelwp.MainActivity: void onCreate(android.os.Bundle)>,null,null,OSPatches/2_fromHtml.patch
+Localization,<android.text.Html: android.text.Spanned fromHtml(java.lang.String)>,OS,<com.kikidi.koifreelwp.MainActivity: void onCreate(android.os.Bundle)>,null,null,OSPatches/2_fromHtml.patch
+Success,null,OS,<com.kikidi.koifreelwp.MainActivity: void onCreate(android.os.Bundle)>,null,null,OSPatches/2_fromHtml.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.bumptech.glide.request.GenericRequest: android.graphics.drawable.Drawable getErrorDrawable()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.bumptech.glide.request.GenericRequest: android.graphics.drawable.Drawable getErrorDrawable()>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<com.bumptech.glide.request.GenericRequest: android.graphics.drawable.Drawable getErrorDrawable()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.bumptech.glide.request.GenericRequest: android.graphics.drawable.Drawable getFallbackDrawable()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.bumptech.glide.request.GenericRequest: android.graphics.drawable.Drawable getFallbackDrawable()>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<com.bumptech.glide.request.GenericRequest: android.graphics.drawable.Drawable getFallbackDrawable()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.bumptech.glide.request.GenericRequest: android.graphics.drawable.Drawable getPlaceholderDrawable()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.bumptech.glide.request.GenericRequest: android.graphics.drawable.Drawable getPlaceholderDrawable()>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<com.bumptech.glide.request.GenericRequest: android.graphics.drawable.Drawable getPlaceholderDrawable()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.kikidi.koifreelwp.Gridimageload: void onCreate(android.os.Bundle)>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.kikidi.koifreelwp.Gridimageload: void onCreate(android.os.Bundle)>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.kikidi.koifreelwp.Gridimageload: void onCreate(android.os.Bundle)>,null,null,OSPatches/getWidth.patch
+Potential,<android.app.Fragment: android.app.Activity getActivity()>,DEVICE,<com.bumptech.glide.manager.RequestManagerRetriever: com.bumptech.glide.RequestManager get(android.app.Fragment)>,null,null,DevicePatches/DatePicker.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.squareup.picasso.PicassoExecutorService: void adjustThreadCount(android.net.NetworkInfo)>,null,null,OSPatches/getType.patch
+Localization,<android.net.NetworkInfo: int getType()>,OS,<com.squareup.picasso.PicassoExecutorService: void adjustThreadCount(android.net.NetworkInfo)>,null,null,OSPatches/getType.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.facebook.ads.redexgen.X.5F: java.lang.Float B(android.view.View)>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.facebook.ads.redexgen.X.5F: java.lang.Float B(android.view.View)>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.facebook.ads.redexgen.X.5F: java.lang.Float B(android.view.View)>,null,null,DevicePatches/getWindow.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,"<com.facebook.ads.redexgen.X.3x: android.graphics.drawable.Drawable B(android.content.Context,int)>",null,null,OSPatches/getDrawable.patch
+Potential,"<android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)>",OS,<com.facebook.ads.redexgen.X.6U: void B(com.facebook.ads.redexgen.X.71)>,null,null,OSPatches/2_requestAudioFocus.patch
+Localization,"<android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)>",OS,<com.facebook.ads.redexgen.X.6U: void B(com.facebook.ads.redexgen.X.71)>,null,null,OSPatches/2_requestAudioFocus.patch
+Success,null,OS,<com.facebook.ads.redexgen.X.6U: void B(com.facebook.ads.redexgen.X.71)>,null,null,OSPatches/2_requestAudioFocus.patch
+Potential,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.redexgen.X.6T: void onDetachedFromWindow()>,null,null,OSPatches/2_abandonAudioFocus.patch
+Localization,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.redexgen.X.6T: void onDetachedFromWindow()>,null,null,OSPatches/2_abandonAudioFocus.patch
+Success,null,OS,<com.facebook.ads.redexgen.X.6T: void onDetachedFromWindow()>,null,null,OSPatches/2_abandonAudioFocus.patch
+Potential,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.redexgen.X.6Y: void B(com.facebook.ads.redexgen.X.76)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Localization,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.redexgen.X.6Y: void B(com.facebook.ads.redexgen.X.76)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Success,null,OS,<com.facebook.ads.redexgen.X.6Y: void B(com.facebook.ads.redexgen.X.76)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Potential,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.redexgen.X.6X: void B(com.facebook.ads.redexgen.X.72)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Localization,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.redexgen.X.6X: void B(com.facebook.ads.redexgen.X.72)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Success,null,OS,<com.facebook.ads.redexgen.X.6X: void B(com.facebook.ads.redexgen.X.72)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.facebook.ads.redexgen.X.Ht: java.util.Map B(android.content.Context)>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.facebook.ads.redexgen.X.Ht: java.util.Map B(android.content.Context)>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.facebook.ads.redexgen.X.Ht: java.util.Map B(android.content.Context)>,null,null,DevicePatches/getWindow.patch
+Potential,<android.view.View: void setBackgroundDrawable(android.graphics.drawable.Drawable)>,OS,"<com.facebook.ads.redexgen.X.J6: void O(android.view.View,int)>",null,null,OSPatches/setBackgroundDrawable.patch
+Potential,<android.view.View: void setBackgroundDrawable(android.graphics.drawable.Drawable)>,OS,"<com.facebook.ads.redexgen.X.J6: void P(android.view.View,android.graphics.drawable.Drawable)>",null,null,OSPatches/setBackgroundDrawable.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.facebook.ads.redexgen.X.KN: com.facebook.ads.redexgen.X.KO B(android.content.Context)>,null,null,OSPatches/getType.patch
+Localization,<android.net.NetworkInfo: int getType()>,OS,<com.facebook.ads.redexgen.X.KN: com.facebook.ads.redexgen.X.KO B(android.content.Context)>,null,null,OSPatches/getType.patch
+Success,null,OS,<com.facebook.ads.redexgen.X.KN: com.facebook.ads.redexgen.X.KO B(android.content.Context)>,null,null,OSPatches/getType.patch
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.facebook.ads.redexgen.X.KX: void C(boolean)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Localization,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.facebook.ads.redexgen.X.KX: void C(boolean)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Success,null,OS,<com.facebook.ads.redexgen.X.KX: void C(boolean)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.facebook.ads.redexgen.X.KX: void C(com.facebook.ads.redexgen.X.Kc)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Localization,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.facebook.ads.redexgen.X.KX: void C(com.facebook.ads.redexgen.X.Kc)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Success,null,OS,<com.facebook.ads.redexgen.X.KX: void C(com.facebook.ads.redexgen.X.Kc)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Potential,<android.view.accessibility.AccessibilityNodeInfo: void addAction(int)>,OS,<com.facebook.ads.redexgen.X.AT: void A(int)>,null,null,OSPatches/2_addAction.patch
+Localization,<android.view.accessibility.AccessibilityNodeInfo: void addAction(int)>,OS,<com.facebook.ads.redexgen.X.AT: void A(int)>,null,null,OSPatches/2_addAction.patch
+Success,null,OS,<com.facebook.ads.redexgen.X.AT: void A(int)>,null,null,OSPatches/2_addAction.patch
+TimeRecord,null,null,null,18147,11456327,null

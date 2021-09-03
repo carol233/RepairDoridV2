@@ -1,0 +1,7 @@
+Potential,<android.text.Html: android.text.Spanned fromHtml(java.lang.String)>,OS,<com.dcslithum.bmsforAndroid.Tab2Activity: void check()>,null,null,OSPatches/2_fromHtml.patch
+Localization,<android.text.Html: android.text.Spanned fromHtml(java.lang.String)>,OS,<com.dcslithum.bmsforAndroid.Tab2Activity: void check()>,null,null,OSPatches/2_fromHtml.patch
+Success,null,OS,<com.dcslithum.bmsforAndroid.Tab2Activity: void check()>,null,null,OSPatches/2_fromHtml.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.dcslithum.bmsforAndroid.MainActivity: void MainView_show()>,null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,<com.dcslithum.bmsforAndroid.MainActivity: void MainView_show()>,null,null,OSPatches/getColor.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.dcslithum.bmsforAndroid.MainActivity: void MainView_show()>,null,null,OSPatches/getColor.patch
+TimeRecord,null,null,null,6631,13613869,null

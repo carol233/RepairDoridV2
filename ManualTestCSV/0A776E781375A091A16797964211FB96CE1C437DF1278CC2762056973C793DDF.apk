@@ -1,0 +1,21 @@
+Potential,<android.view.Display: int getHeight()>,OS,<com.alhusayn.asianqaida.SplashActivity: void onCreate(android.os.Bundle)>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.alhusayn.asianqaida.SplashActivity: void onCreate(android.os.Bundle)>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.alhusayn.asianqaida.SplashActivity: void onCreate(android.os.Bundle)>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.alhusayn.asianqaida.SplashActivity: void onCreate(android.os.Bundle)>,null,null,OSPatches/getWidth.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.alhusayn.asianqaida.ScreenSlidePageFragment: void LoadGame(int)>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.alhusayn.asianqaida.ScreenSlidePageFragment: void LoadGame(int)>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.alhusayn.asianqaida.ScreenSlidePageFragment: void LoadGame(int)>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.alhusayn.asianqaida.ScreenSlidePageFragment: void LoadGame(int)>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.alhusayn.asianqaida.ScreenSlidePageFragment: void LoadGame(int)>,null,null,OSPatches/getWidth.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.alhusayn.asianqaida.ScreenSlidePageFragment: void LoadGame(int)>,null,null,OSPatches/getWidth.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,"<com.alhusayn.asianqaida.ScreenSlidePageFragment: android.view.View createImageButton(int,int)>",null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,"<com.alhusayn.asianqaida.ScreenSlidePageFragment: android.view.View createImageButton(int,int)>",null,null,OSPatches/getDrawable.patch
+Success,null,OS,"<com.alhusayn.asianqaida.ScreenSlidePageFragment: android.view.View createImageButton(int,int)>",null,null,OSPatches/getDrawable.patch
+Potential,<android.view.Display: int getHeight()>,OS,"<com.alhusayn.asianqaida.ScreenSlidePageFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)>",null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,"<com.alhusayn.asianqaida.ScreenSlidePageFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)>",null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getHeight()>,OS,"<com.alhusayn.asianqaida.ScreenSlidePageFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)>",null,null,OSPatches/getHeight.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,"<com.alhusayn.asianqaida.ScreenSlidePageFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)>",null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,"<com.alhusayn.asianqaida.ScreenSlidePageFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)>",null,null,OSPatches/getDrawable.patch
+Success,null,OS,"<com.alhusayn.asianqaida.ScreenSlidePageFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)>",null,null,OSPatches/getDrawable.patch
+Potential,<android.view.Display: int getWidth()>,OS,"<com.alhusayn.asianqaida.ScreenSlidePageFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)>",null,null,OSPatches/getWidth.patch
+TimeRecord,null,null,null,9470,42787699,null

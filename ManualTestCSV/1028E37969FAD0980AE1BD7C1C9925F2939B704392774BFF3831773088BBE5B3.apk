@@ -1,0 +1,31 @@
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.wigomobile.blackjackxd2.Splash: void a()>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Localization,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.wigomobile.blackjackxd2.Splash: void a()>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Success,null,OS,<com.wigomobile.blackjackxd2.Splash: void a()>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.wigomobile.bjweb.c: void <init>(android.content.Context)>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.wigomobile.bjweb.c: void <init>(android.content.Context)>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<com.wigomobile.bjweb.c: void <init>(android.content.Context)>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.wigomobile.bjweb.c: void <init>(android.content.Context)>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.wigomobile.bjweb.c: void <init>(android.content.Context)>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.wigomobile.bjweb.c: void <init>(android.content.Context)>,null,null,OSPatches/getWidth.patch
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.wigomobile.blackjackxd2.ZBlackjack: void e()>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Localization,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.wigomobile.blackjackxd2.ZBlackjack: void e()>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Success,null,OS,<com.wigomobile.blackjackxd2.ZBlackjack: void e()>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Potential,<android.os.Vibrator: void vibrate(long)>,OS,<com.wigomobile.blackjackxd2.z: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Localization,<android.os.Vibrator: void vibrate(long)>,OS,<com.wigomobile.blackjackxd2.z: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Success,null,OS,<com.wigomobile.blackjackxd2.z: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Potential,<android.os.Vibrator: void vibrate(long)>,OS,<com.wigomobile.blackjackxd2.p: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Localization,<android.os.Vibrator: void vibrate(long)>,OS,<com.wigomobile.blackjackxd2.p: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Success,null,OS,<com.wigomobile.blackjackxd2.p: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Potential,<android.os.Vibrator: void vibrate(long)>,OS,<com.wigomobile.blackjackxd2.ad: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Localization,<android.os.Vibrator: void vibrate(long)>,OS,<com.wigomobile.blackjackxd2.ad: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Success,null,OS,<com.wigomobile.blackjackxd2.ad: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Potential,<android.os.Vibrator: void vibrate(long)>,OS,<com.wigomobile.blackjackxd2.aa: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Localization,<android.os.Vibrator: void vibrate(long)>,OS,<com.wigomobile.blackjackxd2.aa: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Success,null,OS,<com.wigomobile.blackjackxd2.aa: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Potential,<android.os.Vibrator: void vibrate(long)>,OS,<com.wigomobile.blackjackxd2.ac: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Localization,<android.os.Vibrator: void vibrate(long)>,OS,<com.wigomobile.blackjackxd2.ac: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Success,null,OS,<com.wigomobile.blackjackxd2.ac: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Potential,<android.os.Vibrator: void vibrate(long)>,OS,<com.wigomobile.blackjackxd2.ab: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Localization,<android.os.Vibrator: void vibrate(long)>,OS,<com.wigomobile.blackjackxd2.ab: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+Success,null,OS,<com.wigomobile.blackjackxd2.ab: void onClick(android.view.View)>,null,null,OSPatches/2_vibrate_12.patch
+TimeRecord,null,null,null,14591,5766606,null

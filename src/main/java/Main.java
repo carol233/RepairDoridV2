@@ -1,6 +1,5 @@
 import soot.*;
 import soot.options.Options;
-
 import java.util.Collections;
 
 public class Main {
@@ -19,8 +18,8 @@ public class Main {
         String SemanticPatchPath_device = "DevicePatches";
         String SemanticPatchPath_callback = "CallBackPatches";
         String androidJar = "/Users/yzha0544/Library/Android/sdk/platforms/";
-        String APK = "apps/wpandroid-8.9.apk";
-        String logPath = "tmp_output.csv";
+        String APK = "app_old/053E33F48962A81653C26E022AA2F3F40B791C417C740EB51308B624CA3813CE.apk";
+        String logPath = "ManualTestCSV/053E33F48962A81653C26E022AA2F3F40B791C417C740EB51308B624CA3813CE.apk.csv";
 
         G.reset();
         //set options
@@ -35,17 +34,20 @@ public class Main {
         Options.v().set_process_multiple_dex(true);  // Inform Dexpler that the APK may have more than one .dex files
         Options.v().set_include_all(true);
         //output options
-        Options.v().set_output_format(Options.output_format_none);
+        Options.v().set_output_format(Options.output_format_dex);
+        Options.v().set_output_dir("ManualTest");
         //-force-overwrite
         Options.v().set_force_overwrite(true);
         Options.v().set_validate(true); // Validate Jimple bodies in each transformation pack
         // Resolve required classes
         Scene.v().addBasicClass("java.io.PrintStream", SootClass.SIGNATURES);
         Scene.v().addBasicClass("java.lang.System",SootClass.SIGNATURES);
+        Scene.v().addBasicClass("android.net.NetworkCapabilities", SootClass.HIERARCHY);
         Scene.v().addBasicClass("android.webkit.WebResourceRequest", SootClass.HIERARCHY);
         Scene.v().addBasicClass("android.webkit.WebResourceRequest$Builder", SootClass.HIERARCHY);
         Scene.v().addBasicClass("android.media.AudioAttributes", SootClass.HIERARCHY);
         Scene.v().addBasicClass("android.media.AudioAttributes$Builder", SootClass.HIERARCHY);
+        Scene.v().addBasicClass("android.media.AudioFocusRequest$Builder", SootClass.HIERARCHY);
         Scene.v().addBasicClass("android.app.Webview", SootClass.HIERARCHY);
         Scene.v().addBasicClass("java.String.string", SootClass.HIERARCHY);
 

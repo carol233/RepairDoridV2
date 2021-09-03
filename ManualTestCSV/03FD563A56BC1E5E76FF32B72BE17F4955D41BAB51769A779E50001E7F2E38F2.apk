@@ -1,0 +1,21 @@
+Potential,<android.media.MediaPlayer: void setAudioStreamType(int)>,OS,<com.unity3d.player.p: void c()>,null,null,OSPatches/2_setAudioStreamType.patch
+Localization,<android.media.MediaPlayer: void setAudioStreamType(int)>,OS,<com.unity3d.player.p: void c()>,null,null,OSPatches/2_setAudioStreamType.patch
+Success,null,OS,<com.unity3d.player.p: void c()>,null,null,OSPatches/2_setAudioStreamType.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.unity3d.player.p: void onPrepared(android.media.MediaPlayer)>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.unity3d.player.p: void onPrepared(android.media.MediaPlayer)>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.unity3d.player.p: void onPrepared(android.media.MediaPlayer)>,null,null,DevicePatches/getWindow.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.onesignal.OSUtils: java.lang.Integer getNetType()>,null,null,OSPatches/getType.patch
+Localization,<android.net.NetworkInfo: int getType()>,OS,<com.onesignal.OSUtils: java.lang.Integer getNetType()>,null,null,OSPatches/getType.patch
+Success,null,OS,<com.onesignal.OSUtils: java.lang.Integer getNetType()>,null,null,OSPatches/getType.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,"<com.onesignal.AndroidSupportV4Compat$ContextCompat: int getColor(android.content.Context,int)>",null,null,OSPatches/getColor.patch
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.unity3d.player.UnityPlayer: void a(android.app.Activity)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Localization,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.unity3d.player.UnityPlayer: void a(android.app.Activity)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Success,null,OS,<com.unity3d.player.UnityPlayer: void a(android.app.Activity)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.unity3d.player.UnityPlayer: void a(android.app.Activity)>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.unity3d.player.UnityPlayer: void a(android.app.Activity)>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.unity3d.player.UnityPlayer: void a(android.app.Activity)>,null,null,DevicePatches/getWindow.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.unity3d.player.UnityPlayer: void l()>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.unity3d.player.UnityPlayer: void l()>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.unity3d.player.UnityPlayer: void l()>,null,null,DevicePatches/getWindow.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.appsflyer.f: com.appsflyer.f$e ˊ(android.content.Context)>,null,null,OSPatches/getType.patch
+TimeRecord,null,null,null,6844,26740112,null

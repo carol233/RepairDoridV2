@@ -1,0 +1,300 @@
+Potential,"<android.webkit.WebViewClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",OS,"<com.google.ads.internal.i: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",null,null,OSPatches/2_shouldOverrideUrLoading.patch
+Localization,"<android.webkit.WebViewClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",OS,"<com.google.ads.internal.i: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",null,null,OSPatches/2_shouldOverrideUrLoading.patch
+Success,null,OS,"<com.google.ads.internal.i: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",null,null,OSPatches/2_shouldOverrideUrLoading.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.google.ads.util.AdUtil: java.lang.String d(android.content.Context)>,null,null,OSPatches/getType.patch
+Localization,<android.net.NetworkInfo: int getType()>,OS,<com.google.ads.util.AdUtil: java.lang.String d(android.content.Context)>,null,null,OSPatches/getType.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.backup.Backup: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.backup.Backup: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.backup.Backup: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.account.ChartView$GraphTagView: int getDisplayWidth(android.content.Context)>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.account.ChartView$GraphTagView: int getDisplayWidth(android.content.Context)>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.yamamoto.memogaLib.account.ChartView$GraphTagView: int getDisplayWidth(android.content.Context)>,null,null,OSPatches/getWidth.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.calendar.ScaleHorz: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.calendar.ScaleHorz: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Success,null,OS,<com.yamamoto.memogaLib.calendar.ScaleHorz: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.account.AcView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.account.AcView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.account.AcView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.diary.DiaryDaysView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.diary.DiaryDaysView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.diary.DiaryDaysView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.diary.DbView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.diary.DbView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.diary.DbView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.diary.DiaryListView: int getMinimumLineCount()>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.diary.DiaryListView: int getMinimumLineCount()>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<com.yamamoto.memogaLib.diary.DiaryListView: int getMinimumLineCount()>,null,null,OSPatches/getHeight.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.diary.DiaryListView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.diary.DiaryListView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.diary.DiaryListView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.util.YSpinner: void setResourceIds(int[])>,null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.util.YSpinner: void setResourceIds(int[])>,null,null,OSPatches/getColor.patch
+Success,null,OS,<com.yamamoto.memogaLib.util.YSpinner: void setResourceIds(int[])>,null,null,OSPatches/getColor.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.yamamoto.memogaLib.util.YSpinner: void setResourceIds(int[])>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.yamamoto.memogaLib.util.YSpinner: void setResourceIds(int[])>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<com.yamamoto.memogaLib.util.YSpinner: void setResourceIds(int[])>,null,null,OSPatches/getDrawable.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.memo.TaskMemoList: int getMinimumLineCount()>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.memo.TaskMemoList: int getMinimumLineCount()>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<com.yamamoto.memogaLib.memo.TaskMemoList: int getMinimumLineCount()>,null,null,OSPatches/getHeight.patch
+Potential,<android.widget.TimePicker: void setCurrentHour(java.lang.Integer)>,OS,"<com.yamamoto.memogaLib.util.MessageUtil: void datetime(android.content.Context,int,java.util.Calendar,com.yamamoto.memogaLib.util.MessageUtil$MessageCallback)>",null,null,OSPatches/2_setCurrentHour.patch
+Localization,<android.widget.TimePicker: void setCurrentHour(java.lang.Integer)>,OS,"<com.yamamoto.memogaLib.util.MessageUtil: void datetime(android.content.Context,int,java.util.Calendar,com.yamamoto.memogaLib.util.MessageUtil$MessageCallback)>",null,null,OSPatches/2_setCurrentHour.patch
+Success,null,OS,"<com.yamamoto.memogaLib.util.MessageUtil: void datetime(android.content.Context,int,java.util.Calendar,com.yamamoto.memogaLib.util.MessageUtil$MessageCallback)>",null,null,OSPatches/2_setCurrentHour.patch
+Potential,<android.widget.TimePicker: void setCurrentMinute(java.lang.Integer)>,OS,"<com.yamamoto.memogaLib.util.MessageUtil: void datetime(android.content.Context,int,java.util.Calendar,com.yamamoto.memogaLib.util.MessageUtil$MessageCallback)>",null,null,OSPatches/2_setCurrentMinute.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.notice.NoticeServiceBase: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.notice.NoticeServiceBase: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.notice.NoticeServiceBase: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.util.MonthViewV$SevenDaysView: void initDraw(android.content.Context)>,null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.util.MonthViewV$SevenDaysView: void initDraw(android.content.Context)>,null,null,OSPatches/getColor.patch
+Success,null,OS,<com.yamamoto.memogaLib.util.MonthViewV$SevenDaysView: void initDraw(android.content.Context)>,null,null,OSPatches/getColor.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.calendar.MonthLineViewBaseOld: void setSize()>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.calendar.MonthLineViewBaseOld: void setSize()>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<com.yamamoto.memogaLib.calendar.MonthLineViewBaseOld: void setSize()>,null,null,OSPatches/getHeight.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.account.AcDayReplicator: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.account.AcDayReplicator: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.account.AcDayReplicator: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.calendar.YearView: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.calendar.YearView: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Success,null,OS,<com.yamamoto.memogaLib.calendar.YearView: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.calendar.YearViewBase: void setSize()>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.calendar.YearViewBase: void setSize()>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<com.yamamoto.memogaLib.calendar.YearViewBase: void setSize()>,null,null,OSPatches/getHeight.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.calendar.MonthLineViewOld: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.calendar.MonthLineViewOld: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Success,null,OS,<com.yamamoto.memogaLib.calendar.MonthLineViewOld: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Potential,"<android.graphics.Canvas: int saveLayer(android.graphics.RectF,android.graphics.Paint,int)>",OS,"<com.yamamoto.memogaLib.map.MapNote$SmoothCanvas: int saveLayer(android.graphics.RectF,android.graphics.Paint,int)>",null,null,OSPatches/2_saveLayer.patch
+Localization,"<android.graphics.Canvas: int saveLayer(android.graphics.RectF,android.graphics.Paint,int)>",OS,"<com.yamamoto.memogaLib.map.MapNote$SmoothCanvas: int saveLayer(android.graphics.RectF,android.graphics.Paint,int)>",null,null,OSPatches/2_saveLayer.patch
+Success,null,OS,"<com.yamamoto.memogaLib.map.MapNote$SmoothCanvas: int saveLayer(android.graphics.RectF,android.graphics.Paint,int)>",null,null,OSPatches/2_saveLayer.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.util.DaysView$DaysListView: void initDraw(android.content.Context)>,null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.util.DaysView$DaysListView: void initDraw(android.content.Context)>,null,null,OSPatches/getColor.patch
+Success,null,OS,<com.yamamoto.memogaLib.util.DaysView$DaysListView: void initDraw(android.content.Context)>,null,null,OSPatches/getColor.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.habit.HabitNoteView: int getMinimumLineCount()>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.habit.HabitNoteView: int getMinimumLineCount()>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<com.yamamoto.memogaLib.habit.HabitNoteView: int getMinimumLineCount()>,null,null,OSPatches/getHeight.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.habit.HabitNoteView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.habit.HabitNoteView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.habit.HabitNoteView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.widget.WidgetMemoService: int getDisplayWidth()>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.widget.WidgetMemoService: int getDisplayWidth()>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.yamamoto.memogaLib.widget.WidgetMemoService: int getDisplayWidth()>,null,null,OSPatches/getWidth.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.photo.PhotoSelector$CustomAdapter: boolean initData(android.view.ViewGroup)>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.photo.PhotoSelector$CustomAdapter: boolean initData(android.view.ViewGroup)>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<com.yamamoto.memogaLib.photo.PhotoSelector$CustomAdapter: boolean initData(android.view.ViewGroup)>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.photo.PhotoSelector$CustomAdapter: boolean initData(android.view.ViewGroup)>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.photo.PhotoSelector$CustomAdapter: boolean initData(android.view.ViewGroup)>,null,null,OSPatches/getWidth.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.photo.PhotoSelector$CustomAdapter: boolean initData(android.view.ViewGroup)>,null,null,OSPatches/getWidth.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.widget.WidgetMemoService: float getScale(int)>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.widget.WidgetMemoService: float getScale(int)>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.yamamoto.memogaLib.widget.WidgetMemoService: float getScale(int)>,null,null,OSPatches/getWidth.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.widget.WidgetMemoService: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.widget.WidgetMemoService: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.widget.WidgetMemoService: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.util.WindowUtil: android.graphics.Point getSize()>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.util.WindowUtil: android.graphics.Point getSize()>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<com.yamamoto.memogaLib.util.WindowUtil: android.graphics.Point getSize()>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.util.WindowUtil: android.graphics.Point getSize()>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.util.WindowUtil: android.graphics.Point getSize()>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.yamamoto.memogaLib.util.WindowUtil: android.graphics.Point getSize()>,null,null,OSPatches/getWidth.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.calendar.WeekViewHeader: void init()>,null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.calendar.WeekViewHeader: void init()>,null,null,OSPatches/getColor.patch
+Success,null,OS,<com.yamamoto.memogaLib.calendar.WeekViewHeader: void init()>,null,null,OSPatches/getColor.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.yamamoto.memogaLib.util.YTabButtons: void <init>(android.widget.FrameLayout)>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.yamamoto.memogaLib.util.YTabButtons: void <init>(android.widget.FrameLayout)>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<com.yamamoto.memogaLib.util.YTabButtons: void <init>(android.widget.FrameLayout)>,null,null,OSPatches/getDrawable.patch
+Potential,"<android.app.Notification: void <init>(int,java.lang.CharSequence,long)>",OS,"<com.yamamoto.memogaLib.notice.Notify: void send(int,android.content.Context,java.lang.Object,java.lang.String,java.util.Calendar,int,android.content.Intent,int,boolean,boolean)>",null,null,OSPatches/init.patch
+Localization,"<android.app.Notification: void <init>(int,java.lang.CharSequence,long)>",OS,"<com.yamamoto.memogaLib.notice.Notify: void send(int,android.content.Context,java.lang.Object,java.lang.String,java.util.Calendar,int,android.content.Intent,int,boolean,boolean)>",null,null,OSPatches/init.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,"<com.yamamoto.memogaLib.photo.ToyCameraView: void ajustCameraView(android.view.SurfaceHolder,int,int)>",null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,"<com.yamamoto.memogaLib.photo.ToyCameraView: void ajustCameraView(android.view.SurfaceHolder,int,int)>",null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,"<com.yamamoto.memogaLib.photo.ToyCameraView: void ajustCameraView(android.view.SurfaceHolder,int,int)>",null,null,DevicePatches/setRecordingHint.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: boolean onTouchEvent(android.view.MotionEvent)>,null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: boolean onTouchEvent(android.view.MotionEvent)>,null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: boolean onTouchEvent(android.view.MotionEvent)>,null,null,DevicePatches/setRecordingHint.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,"<com.yamamoto.memogaLib.photo.ToyCameraView: boolean saveImage(byte[],com.yamamoto.memogaLib.photo.ToyCameraView$CameraListener)>",null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,"<com.yamamoto.memogaLib.photo.ToyCameraView: boolean saveImage(byte[],com.yamamoto.memogaLib.photo.ToyCameraView$CameraListener)>",null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,"<com.yamamoto.memogaLib.photo.ToyCameraView: boolean saveImage(byte[],com.yamamoto.memogaLib.photo.ToyCameraView$CameraListener)>",null,null,DevicePatches/setRecordingHint.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setAntibanding(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setAntibanding(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setAntibanding(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setColorEffect(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setColorEffect(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setColorEffect(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setFlashMode(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setFlashMode(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setFlashMode(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setFocusMode(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setFocusMode(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setFocusMode(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.habit.HbView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.habit.HbView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.habit.HbView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setPictureFormat(int)>,null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setPictureFormat(int)>,null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setPictureFormat(int)>,null,null,DevicePatches/setRecordingHint.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,"<com.yamamoto.memogaLib.photo.ToyCameraView: void setPreviewSize(int,int)>",null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,"<com.yamamoto.memogaLib.photo.ToyCameraView: void setPreviewSize(int,int)>",null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,"<com.yamamoto.memogaLib.photo.ToyCameraView: void setPreviewSize(int,int)>",null,null,DevicePatches/setRecordingHint.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setSceneMode(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setSceneMode(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setSceneMode(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setWhiteBalance(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setWhiteBalance(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,<com.yamamoto.memogaLib.photo.ToyCameraView: void setWhiteBalance(java.lang.String)>,null,null,DevicePatches/setRecordingHint.patch
+Potential,<android.text.Html: java.lang.String toHtml(android.text.Spanned)>,OS,<com.yamamoto.memogaLib.memo.YMemoEditor: java.lang.String getPlainText()>,null,null,OSPatches/toHtml.patch
+Localization,<android.text.Html: java.lang.String toHtml(android.text.Spanned)>,OS,<com.yamamoto.memogaLib.memo.YMemoEditor: java.lang.String getPlainText()>,null,null,OSPatches/toHtml.patch
+Success,null,OS,<com.yamamoto.memogaLib.memo.YMemoEditor: java.lang.String getPlainText()>,null,null,OSPatches/toHtml.patch
+Potential,<android.text.Html: java.lang.String toHtml(android.text.Spanned)>,OS,"<com.yamamoto.memogaLib.memo.YMemoEditor: void getString(java.lang.String[],int)>",null,null,OSPatches/toHtml.patch
+Localization,<android.text.Html: java.lang.String toHtml(android.text.Spanned)>,OS,"<com.yamamoto.memogaLib.memo.YMemoEditor: void getString(java.lang.String[],int)>",null,null,OSPatches/toHtml.patch
+Success,null,OS,"<com.yamamoto.memogaLib.memo.YMemoEditor: void getString(java.lang.String[],int)>",null,null,OSPatches/toHtml.patch
+Potential,<java.lang.Integer: int intValue()>,OS,"<com.google.common.collect.ArrayTable: java.lang.Object erase(java.lang.Object,java.lang.Object)>",null,null,OSPatches/2_getCurrentMinute.patch
+Localization,<java.lang.Integer: int intValue()>,OS,"<com.google.common.collect.ArrayTable: java.lang.Object erase(java.lang.Object,java.lang.Object)>",null,null,OSPatches/2_getCurrentMinute.patch
+Success,null,OS,"<com.google.common.collect.ArrayTable: java.lang.Object erase(java.lang.Object,java.lang.Object)>",null,null,OSPatches/2_getCurrentMinute.patch
+Potential,<java.lang.Integer: int intValue()>,OS,"<com.google.common.collect.ArrayTable: java.lang.Object erase(java.lang.Object,java.lang.Object)>",null,null,OSPatches/2_getCurrentHour.patch
+Localization,<java.lang.Integer: int intValue()>,OS,"<com.google.common.collect.ArrayTable: java.lang.Object erase(java.lang.Object,java.lang.Object)>",null,null,OSPatches/2_getCurrentHour.patch
+Success,null,OS,"<com.google.common.collect.ArrayTable: java.lang.Object erase(java.lang.Object,java.lang.Object)>",null,null,OSPatches/2_getCurrentHour.patch
+Potential,<java.lang.Integer: int intValue()>,OS,"<com.google.common.collect.ArrayTable: java.lang.Object put(java.lang.Object,java.lang.Object,java.lang.Object)>",null,null,OSPatches/2_getCurrentMinute.patch
+Localization,<java.lang.Integer: int intValue()>,OS,"<com.google.common.collect.ArrayTable: java.lang.Object put(java.lang.Object,java.lang.Object,java.lang.Object)>",null,null,OSPatches/2_getCurrentMinute.patch
+Success,null,OS,"<com.google.common.collect.ArrayTable: java.lang.Object put(java.lang.Object,java.lang.Object,java.lang.Object)>",null,null,OSPatches/2_getCurrentMinute.patch
+Potential,<java.lang.Integer: int intValue()>,OS,"<com.google.common.collect.ArrayTable: java.lang.Object put(java.lang.Object,java.lang.Object,java.lang.Object)>",null,null,OSPatches/2_getCurrentHour.patch
+Localization,<java.lang.Integer: int intValue()>,OS,"<com.google.common.collect.ArrayTable: java.lang.Object put(java.lang.Object,java.lang.Object,java.lang.Object)>",null,null,OSPatches/2_getCurrentHour.patch
+Success,null,OS,"<com.google.common.collect.ArrayTable: java.lang.Object put(java.lang.Object,java.lang.Object,java.lang.Object)>",null,null,OSPatches/2_getCurrentHour.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.diary.DiaryOneHabit: int getMinimumLineCount()>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.diary.DiaryOneHabit: int getMinimumLineCount()>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<com.yamamoto.memogaLib.diary.DiaryOneHabit: int getMinimumLineCount()>,null,null,OSPatches/getHeight.patch
+Potential,<android.text.Html: java.lang.String toHtml(android.text.Spanned)>,OS,"<com.yamamoto.memogaLib.memo.YMemoEditor: void getString(java.lang.String[],int,int)>",null,null,OSPatches/toHtml.patch
+Localization,<android.text.Html: java.lang.String toHtml(android.text.Spanned)>,OS,"<com.yamamoto.memogaLib.memo.YMemoEditor: void getString(java.lang.String[],int,int)>",null,null,OSPatches/toHtml.patch
+Success,null,OS,"<com.yamamoto.memogaLib.memo.YMemoEditor: void getString(java.lang.String[],int,int)>",null,null,OSPatches/toHtml.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.diary.DiaryOneHabit: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.diary.DiaryOneHabit: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.diary.DiaryOneHabit: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.view.Display: int getWidth()>,OS,"<com.yamamoto.memogaLib.memo.YMemoEditor: void loadImage0(java.lang.String,boolean,java.lang.StringBuilder,com.yamamoto.memogaLib.memo.YMemoEditor$loadImageBuilder)>",null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,"<com.yamamoto.memogaLib.memo.YMemoEditor: void loadImage0(java.lang.String,boolean,java.lang.StringBuilder,com.yamamoto.memogaLib.memo.YMemoEditor$loadImageBuilder)>",null,null,OSPatches/getWidth.patch
+Success,null,OS,"<com.yamamoto.memogaLib.memo.YMemoEditor: void loadImage0(java.lang.String,boolean,java.lang.StringBuilder,com.yamamoto.memogaLib.memo.YMemoEditor$loadImageBuilder)>",null,null,OSPatches/getWidth.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,"<com.yamamoto.memogaLib.account.AcPerformance$AccountItemAdapter: void <init>(com.yamamoto.memogaLib.account.AcPerformance,android.content.Context,int,java.util.List)>",null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,"<com.yamamoto.memogaLib.account.AcPerformance$AccountItemAdapter: void <init>(com.yamamoto.memogaLib.account.AcPerformance,android.content.Context,int,java.util.List)>",null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,"<com.yamamoto.memogaLib.account.AcPerformance$AccountItemAdapter: void <init>(com.yamamoto.memogaLib.account.AcPerformance,android.content.Context,int,java.util.List)>",null,null,OSPatches/getDrawable.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.calendar.MonthLineViewBase: void setSize()>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.calendar.MonthLineViewBase: void setSize()>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<com.yamamoto.memogaLib.calendar.MonthLineViewBase: void setSize()>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.util.DeviceUtil: float getWidth(android.app.Activity)>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.util.DeviceUtil: float getWidth(android.app.Activity)>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.yamamoto.memogaLib.util.DeviceUtil: float getWidth(android.app.Activity)>,null,null,OSPatches/getWidth.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.util.DeviceUtil: boolean isLargeScreen(android.view.WindowManager)>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.util.DeviceUtil: boolean isLargeScreen(android.view.WindowManager)>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<com.yamamoto.memogaLib.util.DeviceUtil: boolean isLargeScreen(android.view.WindowManager)>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.util.DeviceUtil: boolean isLargeScreen(android.view.WindowManager)>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.util.DeviceUtil: boolean isLargeScreen(android.view.WindowManager)>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.yamamoto.memogaLib.util.DeviceUtil: boolean isLargeScreen(android.view.WindowManager)>,null,null,OSPatches/getWidth.patch
+Potential,<android.text.Html: java.lang.String toHtml(android.text.Spanned)>,OS,<com.yamamoto.memogaLib.memo.YMemoEditor: void getDataFromView()>,null,null,OSPatches/toHtml.patch
+Localization,<android.text.Html: java.lang.String toHtml(android.text.Spanned)>,OS,<com.yamamoto.memogaLib.memo.YMemoEditor: void getDataFromView()>,null,null,OSPatches/toHtml.patch
+Success,null,OS,<com.yamamoto.memogaLib.memo.YMemoEditor: void getDataFromView()>,null,null,OSPatches/toHtml.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.plan.PlanItemView: void setTermView(android.content.Context)>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.plan.PlanItemView: void setTermView(android.content.Context)>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.yamamoto.memogaLib.plan.PlanItemView: void setTermView(android.content.Context)>,null,null,OSPatches/getWidth.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.photo.PhotoDialog: void ajustViewSize(float)>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.photo.PhotoDialog: void ajustViewSize(float)>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<com.yamamoto.memogaLib.photo.PhotoDialog: void ajustViewSize(float)>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.photo.PhotoDialog: void ajustViewSize(float)>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.photo.PhotoDialog: void ajustViewSize(float)>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.yamamoto.memogaLib.photo.PhotoDialog: void ajustViewSize(float)>,null,null,OSPatches/getWidth.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.calendar.TimeLineView: int getDisplayWidth()>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.calendar.TimeLineView: int getDisplayWidth()>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.yamamoto.memogaLib.calendar.TimeLineView: int getDisplayWidth()>,null,null,OSPatches/getWidth.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.diary.DiaryOption: android.graphics.Point getThumbnailSize()>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.diary.DiaryOption: android.graphics.Point getThumbnailSize()>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<com.yamamoto.memogaLib.diary.DiaryOption: android.graphics.Point getThumbnailSize()>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.diary.DiaryOption: android.graphics.Point getThumbnailSize()>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.diary.DiaryOption: android.graphics.Point getThumbnailSize()>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.yamamoto.memogaLib.diary.DiaryOption: android.graphics.Point getThumbnailSize()>,null,null,OSPatches/getWidth.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.calendar.WeekMemo: int getDisplayWidth()>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.calendar.WeekMemo: int getDisplayWidth()>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.yamamoto.memogaLib.calendar.WeekMemo: int getDisplayWidth()>,null,null,OSPatches/getWidth.patch
+Potential,<android.view.Display: int getHeight()>,OS,"<com.yamamoto.memogaLib.photo.Gallary: android.graphics.Bitmap getImageFromUri(android.net.Uri,int)>",null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,"<com.yamamoto.memogaLib.photo.Gallary: android.graphics.Bitmap getImageFromUri(android.net.Uri,int)>",null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getHeight()>,OS,"<com.yamamoto.memogaLib.photo.Gallary: android.graphics.Bitmap getImageFromUri(android.net.Uri,int)>",null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,"<com.yamamoto.memogaLib.photo.Gallary: android.graphics.Bitmap getImageFromUri(android.net.Uri,int)>",null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,"<com.yamamoto.memogaLib.photo.Gallary: android.graphics.Bitmap getImageFromUri(android.net.Uri,int)>",null,null,OSPatches/getWidth.patch
+Potential,<android.view.Display: int getWidth()>,OS,"<com.yamamoto.memogaLib.photo.Gallary: android.graphics.Bitmap getImageFromUri(android.net.Uri,int)>",null,null,OSPatches/getWidth.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.YMemoOptions: int getOldPanelPosition(android.content.Context)>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.YMemoOptions: int getOldPanelPosition(android.content.Context)>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.YMemoOptions: int getOldPanelPosition(android.content.Context)>,null,null,OSPatches/getHeight.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.YMemoOptions: void vibrate(android.content.Context)>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.YMemoOptions: void vibrate(android.content.Context)>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.YMemoOptions: void vibrate(android.content.Context)>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.notice.NoticeService: float getWindowWidth()>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.notice.NoticeService: float getWindowWidth()>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.yamamoto.memogaLib.notice.NoticeService: float getWindowWidth()>,null,null,OSPatches/getWidth.patch
+Potential,<android.text.Html: android.text.Spanned fromHtml(java.lang.String)>,OS,<com.yamamoto.memogaLib.plan.GanttChart: void setDrawData(com.yamamoto.memogaLib.plan.PlanData)>,null,null,OSPatches/2_fromHtml.patch
+Localization,<android.text.Html: android.text.Spanned fromHtml(java.lang.String)>,OS,<com.yamamoto.memogaLib.plan.GanttChart: void setDrawData(com.yamamoto.memogaLib.plan.PlanData)>,null,null,OSPatches/2_fromHtml.patch
+Success,null,OS,<com.yamamoto.memogaLib.plan.GanttChart: void setDrawData(com.yamamoto.memogaLib.plan.PlanData)>,null,null,OSPatches/2_fromHtml.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.photo.PhotoSelector: int getNumberOfColumns()>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.photo.PhotoSelector: int getNumberOfColumns()>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.yamamoto.memogaLib.photo.PhotoSelector: int getNumberOfColumns()>,null,null,OSPatches/getWidth.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.memo.StandardMemoList: int getMinimumLineCount()>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.memo.StandardMemoList: int getMinimumLineCount()>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<com.yamamoto.memogaLib.memo.StandardMemoList: int getMinimumLineCount()>,null,null,OSPatches/getHeight.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.health.HView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.health.HView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.health.HView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.health.HItem: int getLayout()>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.health.HItem: int getLayout()>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<com.yamamoto.memogaLib.health.HItem: int getLayout()>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.MemogaOptions$Theme: boolean isWide(android.content.Context)>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.MemogaOptions$Theme: boolean isWide(android.content.Context)>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<com.yamamoto.memogaLib.MemogaOptions$Theme: boolean isWide(android.content.Context)>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.MemogaOptions$Theme: boolean isWide(android.content.Context)>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.MemogaOptions$Theme: boolean isWide(android.content.Context)>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.yamamoto.memogaLib.MemogaOptions$Theme: boolean isWide(android.content.Context)>,null,null,OSPatches/getWidth.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.account.AcPerformance$5: void run()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.account.AcPerformance$5: void run()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.account.AcPerformance$5: void run()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.calendar.ScaleVert: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.calendar.ScaleVert: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Success,null,OS,<com.yamamoto.memogaLib.calendar.ScaleVert: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.memo.MemoOne: int getDisplayWidth()>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.memo.MemoOne: int getDisplayWidth()>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.yamamoto.memogaLib.memo.MemoOne: int getDisplayWidth()>,null,null,OSPatches/getWidth.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.diary.DiaryOneView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.diary.DiaryOneView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.diary.DiaryOneView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.view.Display: int getHeight()>,OS,"<com.yamamoto.memogaLib.memo.YFreeShape: boolean removeLine(float,float)>",null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,"<com.yamamoto.memogaLib.memo.YFreeShape: boolean removeLine(float,float)>",null,null,OSPatches/getHeight.patch
+Success,null,OS,"<com.yamamoto.memogaLib.memo.YFreeShape: boolean removeLine(float,float)>",null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,"<com.yamamoto.memogaLib.memo.YFreeShape: boolean removeLine(float,float)>",null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,"<com.yamamoto.memogaLib.memo.YFreeShape: boolean removeLine(float,float)>",null,null,OSPatches/getWidth.patch
+Success,null,OS,"<com.yamamoto.memogaLib.memo.YFreeShape: boolean removeLine(float,float)>",null,null,OSPatches/getWidth.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.util.MonthView: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.util.MonthView: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Success,null,OS,<com.yamamoto.memogaLib.util.MonthView: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.habit.HabitOneView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.habit.HabitOneView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.habit.HabitOneView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.view.Display: int getHeight()>,OS,"<com.yamamoto.memogaLib.memo.YFreeHand: boolean removeLine(float,float)>",null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,"<com.yamamoto.memogaLib.memo.YFreeHand: boolean removeLine(float,float)>",null,null,OSPatches/getHeight.patch
+Success,null,OS,"<com.yamamoto.memogaLib.memo.YFreeHand: boolean removeLine(float,float)>",null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,"<com.yamamoto.memogaLib.memo.YFreeHand: boolean removeLine(float,float)>",null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,"<com.yamamoto.memogaLib.memo.YFreeHand: boolean removeLine(float,float)>",null,null,OSPatches/getWidth.patch
+Success,null,OS,"<com.yamamoto.memogaLib.memo.YFreeHand: boolean removeLine(float,float)>",null,null,OSPatches/getWidth.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.account.AccountView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.account.AccountView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.account.AccountView: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.view.Display: int getHeight()>,OS,"<com.yamamoto.memogaLib.image.PhotoEditor: android.graphics.Bitmap getImageFromUri(android.net.Uri,int)>",null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,"<com.yamamoto.memogaLib.image.PhotoEditor: android.graphics.Bitmap getImageFromUri(android.net.Uri,int)>",null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getHeight()>,OS,"<com.yamamoto.memogaLib.image.PhotoEditor: android.graphics.Bitmap getImageFromUri(android.net.Uri,int)>",null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,"<com.yamamoto.memogaLib.image.PhotoEditor: android.graphics.Bitmap getImageFromUri(android.net.Uri,int)>",null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,"<com.yamamoto.memogaLib.image.PhotoEditor: android.graphics.Bitmap getImageFromUri(android.net.Uri,int)>",null,null,OSPatches/getWidth.patch
+Potential,<android.view.Display: int getWidth()>,OS,"<com.yamamoto.memogaLib.image.PhotoEditor: android.graphics.Bitmap getImageFromUri(android.net.Uri,int)>",null,null,OSPatches/getWidth.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.memo.MemoOptions$PanelSize: int getOldPanelPosition(android.content.Context)>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.memo.MemoOptions$PanelSize: int getOldPanelPosition(android.content.Context)>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getHeight()>,OS,<com.yamamoto.memogaLib.memo.MemoOptions$PanelSize: int getOldPanelPosition(android.content.Context)>,null,null,OSPatches/getHeight.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.memo.YMemoList$5: void run()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.memo.YMemoList$5: void run()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.memo.YMemoList$5: void run()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.calendar.MonthLineView: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,<com.yamamoto.memogaLib.calendar.MonthLineView: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Success,null,OS,<com.yamamoto.memogaLib.calendar.MonthLineView: void onDraw(android.graphics.Canvas)>,null,null,OSPatches/getColor.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.calendar.CalendarItemReplicator: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,<com.yamamoto.memogaLib.calendar.CalendarItemReplicator: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,<com.yamamoto.memogaLib.calendar.CalendarItemReplicator: void vibrate()>,null,null,OSPatches/2_vibrate_11.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.widget.MemoImageBuilder: int getDisplayWidth()>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.yamamoto.memogaLib.widget.MemoImageBuilder: int getDisplayWidth()>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.yamamoto.memogaLib.widget.MemoImageBuilder: int getDisplayWidth()>,null,null,OSPatches/getWidth.patch
+TimeRecord,null,null,null,29052,11253839,null

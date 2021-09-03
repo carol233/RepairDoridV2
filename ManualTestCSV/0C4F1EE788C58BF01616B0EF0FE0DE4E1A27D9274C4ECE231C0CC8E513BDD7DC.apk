@@ -1,0 +1,6 @@
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.a.a.ai: void a(android.net.NetworkInfo)>,null,null,OSPatches/getType.patch
+Localization,<android.net.NetworkInfo: int getType()>,OS,<com.a.a.ai: void a(android.net.NetworkInfo)>,null,null,OSPatches/getType.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.brand.lionwallpapers.Splash: void onCreate(android.os.Bundle)>,null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,<com.brand.lionwallpapers.Splash: void onCreate(android.os.Bundle)>,null,null,OSPatches/getColor.patch
+Success,null,OS,<com.brand.lionwallpapers.Splash: void onCreate(android.os.Bundle)>,null,null,OSPatches/getColor.patch
+TimeRecord,null,null,null,8935,7783587,null

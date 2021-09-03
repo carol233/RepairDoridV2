@@ -1,0 +1,14 @@
+Potential,"<android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)>",OS,<khalil.husari.tartil.List_safheha: void initControls()>,null,null,OSPatches/2_requestAudioFocus.patch
+Potential,"<android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)>",OS,<khalil.husari.tartil.List_hezbha: void initControls()>,null,null,OSPatches/2_requestAudioFocus.patch
+Potential,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<khalil.husari.tartil.List_safheha: void onDestroy()>,null,null,OSPatches/2_abandonAudioFocus.patch
+Potential,"<android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)>",OS,<khalil.husari.tartil.List_jozha: void initControls()>,null,null,OSPatches/2_requestAudioFocus.patch
+Potential,"<android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)>",OS,<khalil.husari.tartil.Favget: void initControls()>,null,null,OSPatches/2_requestAudioFocus.patch
+Potential,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<khalil.husari.tartil.List_hezbha: void onDestroy()>,null,null,OSPatches/2_abandonAudioFocus.patch
+Potential,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<khalil.husari.tartil.List_jozha: void onDestroy()>,null,null,OSPatches/2_abandonAudioFocus.patch
+Potential,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<khalil.husari.tartil.Favget: void onDestroy()>,null,null,OSPatches/2_abandonAudioFocus.patch
+Potential,"<android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)>",OS,<khalil.husari.tartil.List_sureha: void initControls()>,null,null,OSPatches/2_requestAudioFocus.patch
+Potential,<android.view.View: void setBackgroundDrawable(android.graphics.drawable.Drawable)>,OS,<yuku.ambilwarna.AmbilWarnaDialog: void updateAlphaView()>,null,null,OSPatches/setBackgroundDrawable.patch
+Localization,<android.view.View: void setBackgroundDrawable(android.graphics.drawable.Drawable)>,OS,<yuku.ambilwarna.AmbilWarnaDialog: void updateAlphaView()>,null,null,OSPatches/setBackgroundDrawable.patch
+Success,null,OS,<yuku.ambilwarna.AmbilWarnaDialog: void updateAlphaView()>,null,null,OSPatches/setBackgroundDrawable.patch
+Potential,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<khalil.husari.tartil.List_sureha: void onDestroy()>,null,null,OSPatches/2_abandonAudioFocus.patch
+TimeRecord,null,null,null,2574,16977555,null

@@ -1,0 +1,8 @@
+Potential,"<android.webkit.WebViewClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",OS,"<cal.btt.bst.MainActivity$13: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",null,null,OSPatches/2_shouldOverrideUrLoading.patch
+Localization,"<android.webkit.WebViewClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",OS,"<cal.btt.bst.MainActivity$13: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",null,null,OSPatches/2_shouldOverrideUrLoading.patch
+Success,null,OS,"<cal.btt.bst.MainActivity$13: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",null,null,OSPatches/2_shouldOverrideUrLoading.patch
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,<cal.btt.bst.MainActivity: void k()>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<cal.btt.bst.MainActivity: void onCreate(android.os.Bundle)>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<cal.btt.bst.MainActivity: void onCreate(android.os.Bundle)>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<cal.btt.bst.MainActivity: void onCreate(android.os.Bundle)>,null,null,OSPatches/getDrawable.patch
+TimeRecord,null,null,null,6559,3352207,null

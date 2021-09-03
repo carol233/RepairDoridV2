@@ -1,0 +1,120 @@
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.hustay.swing.webview.SwingWebViewClientForSub: void closeSubWebView()>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.hustay.swing.webview.SwingWebViewClientForSub: void closeSubWebView()>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.hustay.swing.webview.SwingWebViewClientForSub: void closeSubWebView()>,null,null,DevicePatches/getWindow.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.google.zxing.client.android.camera.CameraManager: void openDriver(android.view.SurfaceHolder)>,null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.google.zxing.client.android.camera.CameraManager: void openDriver(android.view.SurfaceHolder)>,null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,<com.google.zxing.client.android.camera.CameraManager: void openDriver(android.view.SurfaceHolder)>,null,null,DevicePatches/setRecordingHint.patch
+Potential,"<android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)>",OS,<org.apache.cordova.CordovaActivity: void onPause()>,null,null,OSPatches/2_requestAudioFocus.patch
+Potential,<android.os.Vibrator: void vibrate(long)>,OS,<org.apache.cordova.vibration.Vibration: void vibrate(long)>,null,null,OSPatches/2_vibrate_12.patch
+Localization,<android.os.Vibrator: void vibrate(long)>,OS,<org.apache.cordova.vibration.Vibration: void vibrate(long)>,null,null,OSPatches/2_vibrate_12.patch
+Localization,"<android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)>",OS,<org.apache.cordova.CordovaActivity: void onPause()>,null,null,OSPatches/2_requestAudioFocus.patch
+Success,null,OS,<org.apache.cordova.vibration.Vibration: void vibrate(long)>,null,null,OSPatches/2_vibrate_12.patch
+Success,null,OS,<org.apache.cordova.CordovaActivity: void onPause()>,null,null,OSPatches/2_requestAudioFocus.patch
+Potential,"<android.os.Vibrator: void vibrate(long[],int)>",OS,"<org.apache.cordova.vibration.Vibration: void vibrateWithPattern(long[],int)>",null,null,OSPatches/2_vibrate_11.patch
+Localization,"<android.os.Vibrator: void vibrate(long[],int)>",OS,"<org.apache.cordova.vibration.Vibration: void vibrateWithPattern(long[],int)>",null,null,OSPatches/2_vibrate_11.patch
+Success,null,OS,"<org.apache.cordova.vibration.Vibration: void vibrateWithPattern(long[],int)>",null,null,OSPatches/2_vibrate_11.patch
+Potential,"<android.webkit.WebViewClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",OS,"<com.hustay.swing.webview.SwingWebViewClientForSub: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>",null,null,OSPatches/2_shouldOverrideUrLoading.patch
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,<org.apache.cordova.CordovaActivity: void onWindowFocusChanged(boolean)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Localization,<android.view.View: void setSystemUiVisibility(int)>,OS,<org.apache.cordova.CordovaActivity: void onWindowFocusChanged(boolean)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Success,null,OS,<org.apache.cordova.CordovaActivity: void onWindowFocusChanged(boolean)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Potential,<android.text.Html: android.text.Spanned fromHtml(java.lang.String)>,OS,<com.google.zxing.client.android.result.supplement.TitleRetriever: void retrieveSupplementalInfo()>,null,null,OSPatches/2_fromHtml.patch
+Localization,<android.text.Html: android.text.Spanned fromHtml(java.lang.String)>,OS,<com.google.zxing.client.android.result.supplement.TitleRetriever: void retrieveSupplementalInfo()>,null,null,OSPatches/2_fromHtml.patch
+Success,null,OS,<com.google.zxing.client.android.result.supplement.TitleRetriever: void retrieveSupplementalInfo()>,null,null,OSPatches/2_fromHtml.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,"<com.google.zxing.client.android.ViewfinderView: void <init>(android.content.Context,android.util.AttributeSet)>",null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,"<com.google.zxing.client.android.ViewfinderView: void <init>(android.content.Context,android.util.AttributeSet)>",null,null,OSPatches/getColor.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,"<com.google.zxing.client.android.ViewfinderView: void <init>(android.content.Context,android.util.AttributeSet)>",null,null,OSPatches/getColor.patch
+Potential,<android.media.MediaPlayer: void setAudioStreamType(int)>,OS,<com.google.zxing.client.android.BeepManager: android.media.MediaPlayer buildMediaPlayer(android.content.Context)>,null,null,OSPatches/2_setAudioStreamType.patch
+Localization,<android.media.MediaPlayer: void setAudioStreamType(int)>,OS,<com.google.zxing.client.android.BeepManager: android.media.MediaPlayer buildMediaPlayer(android.content.Context)>,null,null,OSPatches/2_setAudioStreamType.patch
+Success,null,OS,<com.google.zxing.client.android.BeepManager: android.media.MediaPlayer buildMediaPlayer(android.content.Context)>,null,null,OSPatches/2_setAudioStreamType.patch
+Potential,<android.os.Vibrator: void vibrate(long)>,OS,<com.google.zxing.client.android.BeepManager: void playBeepSoundAndVibrate()>,null,null,OSPatches/2_vibrate_12.patch
+Localization,<android.os.Vibrator: void vibrate(long)>,OS,<com.google.zxing.client.android.BeepManager: void playBeepSoundAndVibrate()>,null,null,OSPatches/2_vibrate_12.patch
+Success,null,OS,<com.google.zxing.client.android.BeepManager: void playBeepSoundAndVibrate()>,null,null,OSPatches/2_vibrate_12.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.google.zxing.client.android.camera.CameraConfigurationManager: boolean getTorchState(android.hardware.Camera)>,null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.google.zxing.client.android.camera.CameraConfigurationManager: boolean getTorchState(android.hardware.Camera)>,null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,<com.google.zxing.client.android.camera.CameraConfigurationManager: boolean getTorchState(android.hardware.Camera)>,null,null,DevicePatches/setRecordingHint.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<org.apache.cordova.splashscreen.SplashScreen: void onConfigurationChanged(android.content.res.Configuration)>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<org.apache.cordova.splashscreen.SplashScreen: void onConfigurationChanged(android.content.res.Configuration)>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<org.apache.cordova.splashscreen.SplashScreen: void onConfigurationChanged(android.content.res.Configuration)>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,"<com.google.zxing.client.android.CaptureActivity: void drawResultPoints(android.graphics.Bitmap,float,com.google.zxing.Result)>",null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,"<com.google.zxing.client.android.CaptureActivity: void drawResultPoints(android.graphics.Bitmap,float,com.google.zxing.Result)>",null,null,OSPatches/getColor.patch
+Success,null,OS,"<com.google.zxing.client.android.CaptureActivity: void drawResultPoints(android.graphics.Bitmap,float,com.google.zxing.Result)>",null,null,OSPatches/getColor.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.google.zxing.client.android.camera.CameraConfigurationManager: void initFromCameraParameters(com.google.zxing.client.android.camera.open.OpenCamera)>,null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,<com.google.zxing.client.android.camera.CameraConfigurationManager: void initFromCameraParameters(com.google.zxing.client.android.camera.open.OpenCamera)>,null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,<com.google.zxing.client.android.camera.CameraConfigurationManager: void initFromCameraParameters(com.google.zxing.client.android.camera.open.OpenCamera)>,null,null,DevicePatches/setRecordingHint.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,"<com.google.zxing.client.android.camera.CameraConfigurationManager: void setDesiredCameraParameters(com.google.zxing.client.android.camera.open.OpenCamera,boolean)>",null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,"<com.google.zxing.client.android.camera.CameraConfigurationManager: void setDesiredCameraParameters(com.google.zxing.client.android.camera.open.OpenCamera,boolean)>",null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,"<com.google.zxing.client.android.camera.CameraConfigurationManager: void setDesiredCameraParameters(com.google.zxing.client.android.camera.open.OpenCamera,boolean)>",null,null,DevicePatches/setRecordingHint.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,"<com.google.zxing.client.android.camera.CameraConfigurationManager: void setTorch(android.hardware.Camera,boolean)>",null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,"<com.google.zxing.client.android.camera.CameraConfigurationManager: void setTorch(android.hardware.Camera,boolean)>",null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,"<com.google.zxing.client.android.camera.CameraConfigurationManager: void setTorch(android.hardware.Camera,boolean)>",null,null,DevicePatches/setRecordingHint.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.hustay.swing.plugin.SwingInterfacePlugin$2: void run()>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.hustay.swing.plugin.SwingInterfacePlugin$2: void run()>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.hustay.swing.plugin.SwingInterfacePlugin$2: void run()>,null,null,DevicePatches/getWindow.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<io.ionic.keyboard.IonicKeyboard$3: void run()>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<io.ionic.keyboard.IonicKeyboard$3: void run()>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<io.ionic.keyboard.IonicKeyboard$3: void run()>,null,null,DevicePatches/getWindow.patch
+Potential,<android.view.Display: int getHeight()>,OS,<org.apache.cordova.splashscreen.SplashScreen$5: void run()>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<org.apache.cordova.splashscreen.SplashScreen$5: void run()>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<org.apache.cordova.splashscreen.SplashScreen$5: void run()>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,<org.apache.cordova.splashscreen.SplashScreen$5: void run()>,null,null,OSPatches/getWidth.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<org.apache.cordova.splashscreen.SplashScreen$5: void run()>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<org.apache.cordova.splashscreen.SplashScreen$5: void run()>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<org.apache.cordova.splashscreen.SplashScreen$5: void run()>,null,null,DevicePatches/getWindow.patch
+Potential,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,"<com.google.zxing.client.android.camera.AutoFocusManager: void <init>(android.content.Context,android.hardware.Camera)>",null,null,DevicePatches/setRecordingHint.patch
+Localization,<android.hardware.Camera: android.hardware.Camera$Parameters getParameters()>,DEVICE,"<com.google.zxing.client.android.camera.AutoFocusManager: void <init>(android.content.Context,android.hardware.Camera)>",null,null,DevicePatches/setRecordingHint.patch
+Success,null,DEVICE,"<com.google.zxing.client.android.camera.AutoFocusManager: void <init>(android.content.Context,android.hardware.Camera)>",null,null,DevicePatches/setRecordingHint.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.squareup.picasso.TargetAction: void error()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.squareup.picasso.TargetAction: void error()>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<com.squareup.picasso.TargetAction: void error()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.onesignal.OSUtils: java.lang.Integer getNetType()>,null,null,OSPatches/getType.patch
+Localization,<android.net.NetworkInfo: int getType()>,OS,<com.onesignal.OSUtils: java.lang.Integer getNetType()>,null,null,OSPatches/getType.patch
+Success,null,OS,<com.onesignal.OSUtils: java.lang.Integer getNetType()>,null,null,OSPatches/getType.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<org.apache.cordova.inappbrowser.InAppBrowser$6: android.view.View createCloseButton(int)>,null,null,OSPatches/getDrawable.patch
+Potential,<android.view.View: void setBackgroundDrawable(android.graphics.drawable.Drawable)>,OS,<org.apache.cordova.inappbrowser.InAppBrowser$6: android.view.View createCloseButton(int)>,null,null,OSPatches/setBackgroundDrawable.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.hustay.swing.webview.SwingWebViewChromeClient: void onHideCustomView()>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.hustay.swing.webview.SwingWebViewChromeClient: void onHideCustomView()>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.hustay.swing.webview.SwingWebViewChromeClient: void onHideCustomView()>,null,null,DevicePatches/getWindow.patch
+Potential,<android.view.Display: int getWidth()>,OS,<com.synconset.MultiImageChooserActivity: void onCreate(android.os.Bundle)>,null,null,OSPatches/getWidth.patch
+Localization,<android.view.Display: int getWidth()>,OS,<com.synconset.MultiImageChooserActivity: void onCreate(android.os.Bundle)>,null,null,OSPatches/getWidth.patch
+Success,null,OS,<com.synconset.MultiImageChooserActivity: void onCreate(android.os.Bundle)>,null,null,OSPatches/getWidth.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,"<com.hustay.swing.webview.SwingWebViewChromeClient: void onShowCustomView(android.view.View,android.webkit.WebChromeClient$CustomViewCallback)>",null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,"<com.hustay.swing.webview.SwingWebViewChromeClient: void onShowCustomView(android.view.View,android.webkit.WebChromeClient$CustomViewCallback)>",null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,"<com.hustay.swing.webview.SwingWebViewChromeClient: void onShowCustomView(android.view.View,android.webkit.WebChromeClient$CustomViewCallback)>",null,null,DevicePatches/getWindow.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<org.apache.cordova.inappbrowser.InAppBrowser$6: void run()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<org.apache.cordova.inappbrowser.InAppBrowser$6: void run()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<org.apache.cordova.inappbrowser.InAppBrowser$6: void run()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.text.Html: android.text.Spanned fromHtml(java.lang.String)>,OS,<com.google.zxing.client.android.result.supplement.ProductResultInfoRetriever: java.lang.String unescapeHTML(java.lang.String)>,null,null,OSPatches/2_fromHtml.patch
+Localization,<android.text.Html: android.text.Spanned fromHtml(java.lang.String)>,OS,<com.google.zxing.client.android.result.supplement.ProductResultInfoRetriever: java.lang.String unescapeHTML(java.lang.String)>,null,null,OSPatches/2_fromHtml.patch
+Success,null,OS,<com.google.zxing.client.android.result.supplement.ProductResultInfoRetriever: java.lang.String unescapeHTML(java.lang.String)>,null,null,OSPatches/2_fromHtml.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,"<com.onesignal.AndroidSupportV4Compat$ContextCompat: int getColor(android.content.Context,int)>",null,null,OSPatches/getColor.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.squareup.picasso.RequestCreator: android.graphics.drawable.Drawable getPlaceholderDrawable()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.squareup.picasso.RequestCreator: android.graphics.drawable.Drawable getPlaceholderDrawable()>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<com.squareup.picasso.RequestCreator: android.graphics.drawable.Drawable getPlaceholderDrawable()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.hustay.swing.webview.SwingWebViewChromeClient2: void onHideCustomView()>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.hustay.swing.webview.SwingWebViewChromeClient2: void onHideCustomView()>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.hustay.swing.webview.SwingWebViewChromeClient2: void onHideCustomView()>,null,null,DevicePatches/getWindow.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,"<com.hustay.swing.webview.SwingWebViewChromeClient2: void onShowCustomView(android.view.View,android.webkit.WebChromeClient$CustomViewCallback)>",null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,"<com.hustay.swing.webview.SwingWebViewChromeClient2: void onShowCustomView(android.view.View,android.webkit.WebChromeClient$CustomViewCallback)>",null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,"<com.hustay.swing.webview.SwingWebViewChromeClient2: void onShowCustomView(android.view.View,android.webkit.WebChromeClient$CustomViewCallback)>",null,null,DevicePatches/getWindow.patch
+Potential,<android.telephony.TelephonyManager: java.lang.String getDeviceId()>,OS,<com.hustay.swing.plugin.DeviceUtils: java.lang.String getImei(android.app.Activity)>,null,null,OSPatches/2_getDeviceId.patch
+Localization,<android.telephony.TelephonyManager: java.lang.String getDeviceId()>,OS,<com.hustay.swing.plugin.DeviceUtils: java.lang.String getImei(android.app.Activity)>,null,null,OSPatches/2_getDeviceId.patch
+Success,null,OS,<com.hustay.swing.plugin.DeviceUtils: java.lang.String getImei(android.app.Activity)>,null,null,OSPatches/2_getDeviceId.patch
+Potential,<java.lang.Integer: int intValue()>,OS,"<com.skwas.cordova.datetimepicker.TimePickerDialog: void onClick(android.content.DialogInterface,int)>",null,null,OSPatches/2_getCurrentMinute.patch
+Localization,<java.lang.Integer: int intValue()>,OS,"<com.skwas.cordova.datetimepicker.TimePickerDialog: void onClick(android.content.DialogInterface,int)>",null,null,OSPatches/2_getCurrentMinute.patch
+Success,null,OS,"<com.skwas.cordova.datetimepicker.TimePickerDialog: void onClick(android.content.DialogInterface,int)>",null,null,OSPatches/2_getCurrentMinute.patch
+Potential,<java.lang.Integer: int intValue()>,OS,"<com.skwas.cordova.datetimepicker.TimePickerDialog: void onClick(android.content.DialogInterface,int)>",null,null,OSPatches/2_getCurrentHour.patch
+Localization,<java.lang.Integer: int intValue()>,OS,"<com.skwas.cordova.datetimepicker.TimePickerDialog: void onClick(android.content.DialogInterface,int)>",null,null,OSPatches/2_getCurrentHour.patch
+Success,null,OS,"<com.skwas.cordova.datetimepicker.TimePickerDialog: void onClick(android.content.DialogInterface,int)>",null,null,OSPatches/2_getCurrentHour.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.squareup.picasso.PicassoExecutorService: void adjustThreadCount(android.net.NetworkInfo)>,null,null,OSPatches/getType.patch
+Localization,<android.net.NetworkInfo: int getType()>,OS,<com.squareup.picasso.PicassoExecutorService: void adjustThreadCount(android.net.NetworkInfo)>,null,null,OSPatches/getType.patch
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.hustay.swing.webview.SwingWebViewChromeClient$4: void toggledFullscreen(boolean)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.hustay.swing.webview.SwingWebViewClient: void closeSubWebView()>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.hustay.swing.webview.SwingWebViewClient: void closeSubWebView()>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.hustay.swing.webview.SwingWebViewClient: void closeSubWebView()>,null,null,DevicePatches/getWindow.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.hustay.swing.webview.SwingWebViewChromeClient$4: void toggledFullscreen(boolean)>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.hustay.swing.webview.SwingWebViewChromeClient$4: void toggledFullscreen(boolean)>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.hustay.swing.webview.SwingWebViewChromeClient$4: void toggledFullscreen(boolean)>,null,null,DevicePatches/getWindow.patch
+Potential,<android.text.Html: android.text.Spanned fromHtml(java.lang.String)>,OS,<nl.xservices.plugins.SocialSharing$1: void run()>,null,null,OSPatches/2_fromHtml.patch
+Localization,<android.text.Html: android.text.Spanned fromHtml(java.lang.String)>,OS,<nl.xservices.plugins.SocialSharing$1: void run()>,null,null,OSPatches/2_fromHtml.patch
+Success,null,OS,<nl.xservices.plugins.SocialSharing$1: void run()>,null,null,OSPatches/2_fromHtml.patch
+TimeRecord,null,null,null,12260,7597962,null

@@ -1,0 +1,2 @@
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.greetingsapps2go.love4.Lock.english.LockTreasureView: void initResourcesIfNecessary()>,null,null,OSPatches/getDrawable.patch
+TimeRecord,null,null,null,17675,21325855,null

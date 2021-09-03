@@ -1,0 +1,87 @@
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.view.ʿˉ: void ʿˉ()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.view.ʿˉ: void ʿˉ()>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<com.ksmobile.launcher.theme.base.view.ʿˉ: void ʿˉ()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.ksmobile.launcher.theme.base.view.ʿˉ: void ⁱˎ()>,null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,<com.ksmobile.launcher.theme.base.view.ʿˉ: void ⁱˎ()>,null,null,OSPatches/getColor.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.ksmobile.launcher.theme.base.view.ʿˉ: void ⁱˎ()>,null,null,OSPatches/getColor.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.ksmobile.launcher.theme.ˎˎ: void ˎᴵ()>,null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,<com.ksmobile.launcher.theme.ˎˎ: void ˎᴵ()>,null,null,OSPatches/getColor.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<com.ksmobile.launcher.theme.ˎˎ: void ˎᴵ()>,null,null,OSPatches/getColor.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.appsflyer.ʿˉ: java.lang.String ˎﹶ(android.content.Context)>,null,null,OSPatches/getType.patch
+Localization,<android.net.NetworkInfo: int getType()>,OS,<com.appsflyer.ʿˉ: java.lang.String ˎﹶ(android.content.Context)>,null,null,OSPatches/getType.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.appsflyer.ʿˉ: java.lang.String ˎﹶ(android.content.Context)>,null,null,OSPatches/getType.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.facebook.ads.internal.ʿˉ.ʼᵢ: void ʽﾞ(android.content.Context)>,null,null,OSPatches/getType.patch
+Localization,<android.net.NetworkInfo: int getType()>,OS,<com.facebook.ads.internal.ʿˉ.ʼᵢ: void ʽﾞ(android.content.Context)>,null,null,OSPatches/getType.patch
+Success,null,OS,<com.facebook.ads.internal.ʿˉ.ʼᵢ: void ʽﾞ(android.content.Context)>,null,null,OSPatches/getType.patch
+Potential,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.internal.ˑˑ.ˎˋ.ˎᴵ.ˎˎ: void onDetachedFromWindow()>,null,null,OSPatches/2_abandonAudioFocus.patch
+Localization,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.internal.ˑˑ.ˎˋ.ˎᴵ.ˎˎ: void onDetachedFromWindow()>,null,null,OSPatches/2_abandonAudioFocus.patch
+Success,null,OS,<com.facebook.ads.internal.ˑˑ.ˎˋ.ˎᴵ.ˎˎ: void onDetachedFromWindow()>,null,null,OSPatches/2_abandonAudioFocus.patch
+Potential,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.internal.ˑˑ.ˎˋ.ˎᴵ.ˎʾ: void ᵢˆ(com.facebook.ads.internal.ˑˑ.ˎˋ.ᵢˆ.ˎᴵ)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Localization,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.internal.ˑˑ.ˎˋ.ˎᴵ.ˎʾ: void ᵢˆ(com.facebook.ads.internal.ˑˑ.ˎˋ.ᵢˆ.ˎᴵ)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Success,null,OS,<com.facebook.ads.internal.ˑˑ.ˎˋ.ˎᴵ.ˎʾ: void ᵢˆ(com.facebook.ads.internal.ˑˑ.ˎˋ.ᵢˆ.ˎᴵ)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.ksmobile.launcher.cmbase.utils.ʽﾞ: int ˎᴵ(android.content.Context)>,null,null,OSPatches/getType.patch
+Localization,<android.net.NetworkInfo: int getType()>,OS,<com.ksmobile.launcher.cmbase.utils.ʽﾞ: int ˎᴵ(android.content.Context)>,null,null,OSPatches/getType.patch
+Success,null,OS,<com.ksmobile.launcher.cmbase.utils.ʽﾞ: int ˎᴵ(android.content.Context)>,null,null,OSPatches/getType.patch
+Potential,"<android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)>",OS,<com.facebook.ads.internal.ˑˑ.ˎˋ.ˎᴵ.ˑʿ: void ᵢˆ(com.facebook.ads.internal.ˑˑ.ˎˋ.ᵢˆ.ٴﹳ)>,null,null,OSPatches/2_requestAudioFocus.patch
+Localization,"<android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)>",OS,<com.facebook.ads.internal.ˑˑ.ˎˋ.ˎᴵ.ˑʿ: void ᵢˆ(com.facebook.ads.internal.ˑˑ.ˎˋ.ᵢˆ.ٴﹳ)>,null,null,OSPatches/2_requestAudioFocus.patch
+Success,null,OS,<com.facebook.ads.internal.ˑˑ.ˎˋ.ˎᴵ.ˑʿ: void ᵢˆ(com.facebook.ads.internal.ˑˑ.ˎˋ.ᵢˆ.ٴﹳ)>,null,null,OSPatches/2_requestAudioFocus.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.facebook.ads.internal.ʼᵢ.ʾﹶ: java.util.Map ᵢˆ(android.content.Context)>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.facebook.ads.internal.ʼᵢ.ʾﹶ: java.util.Map ᵢˆ(android.content.Context)>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.facebook.ads.internal.ʼᵢ.ʾﹶ: java.util.Map ᵢˆ(android.content.Context)>,null,null,DevicePatches/getWindow.patch
+Potential,<android.view.View: void setBackgroundDrawable(android.graphics.drawable.Drawable)>,OS,"<com.ksmobile.launcher.theme.base.result.ٴﹳ: void ᵢˆ(android.view.View,android.graphics.drawable.Drawable)>",null,null,OSPatches/setBackgroundDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.view.ﹳˈ: void run()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.view.ﹳˈ: void run()>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<com.ksmobile.launcher.theme.base.view.ﹳˈ: void run()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,"<com.ksmobile.launcher.theme.base.view.PageIndicatorMarker: void ᵢˆ(int,int)>",null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,"<com.ksmobile.launcher.theme.base.view.PageIndicatorMarker: void ᵢˆ(int,int)>",null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,"<com.ksmobile.launcher.theme.base.view.PageIndicatorMarker: void ᵢˆ(int,int)>",null,null,OSPatches/getDrawable.patch
+Potential,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.internal.ˑˑ.ˎˋ.ˎᴵ.ٴﹳ: void ᵢˆ(com.facebook.ads.internal.ˑˑ.ˎˋ.ᵢˆ.ˎˎ)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Localization,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.internal.ˑˑ.ˎˋ.ˎᴵ.ٴﹳ: void ᵢˆ(com.facebook.ads.internal.ˑˑ.ˎˋ.ᵢˆ.ˎˎ)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Success,null,OS,<com.facebook.ads.internal.ˑˑ.ˎˋ.ˎᴵ.ٴﹳ: void ᵢˆ(com.facebook.ads.internal.ˑˑ.ˎˋ.ᵢˆ.ˎˎ)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.view.ThemeDetail: void onGlobalLayout()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.view.ThemeDetail: void onGlobalLayout()>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<com.ksmobile.launcher.theme.base.view.ThemeDetail: void onGlobalLayout()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.facebook.ads.internal.ʼᵢ.ˈˊ: com.facebook.ads.internal.ʼᵢ.ʾ ˎˋ(android.content.Context)>,null,null,OSPatches/getType.patch
+Localization,<android.net.NetworkInfo: int getType()>,OS,<com.facebook.ads.internal.ʼᵢ.ˈˊ: com.facebook.ads.internal.ʼᵢ.ʾ ˎˋ(android.content.Context)>,null,null,OSPatches/getType.patch
+Success,null,OS,<com.facebook.ads.internal.ʼᵢ.ˈˊ: com.facebook.ads.internal.ʼᵢ.ʾ ˎˋ(android.content.Context)>,null,null,OSPatches/getType.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.facebook.ads.internal.ˎᴵ.ʿˉ: boolean ᵢˆ(android.content.Context)>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.facebook.ads.internal.ˎᴵ.ʿˉ: boolean ᵢˆ(android.content.Context)>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.facebook.ads.internal.ˎᴵ.ʿˉ: boolean ᵢˆ(android.content.Context)>,null,null,DevicePatches/getWindow.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,"<com.ksmobile.launcher.theme.APOMMNQPVEQBNYRULG: void ᵢˆ(java.util.List,java.lang.String,java.lang.String)>",null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,"<com.ksmobile.launcher.theme.APOMMNQPVEQBNYRULG: void ᵢˆ(java.util.List,java.lang.String,java.lang.String)>",null,null,OSPatches/getDrawable.patch
+Success,null,OS,"<com.ksmobile.launcher.theme.APOMMNQPVEQBNYRULG: void ᵢˆ(java.util.List,java.lang.String,java.lang.String)>",null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.APOMMNQPVEQBNYRULG: java.util.List ˎˋ()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.APOMMNQPVEQBNYRULG: java.util.List ˎˋ()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.APOMMNQPVEQBNYRULG: java.util.List ˎˋ()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.APOMMNQPVEQBNYRULG: android.graphics.drawable.Drawable ˎᴵ()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.APOMMNQPVEQBNYRULG: android.graphics.drawable.Drawable ˎᴵ()>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<com.ksmobile.launcher.theme.APOMMNQPVEQBNYRULG: android.graphics.drawable.Drawable ˎᴵ()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.APOMMNQPVEQBNYRULG: java.util.List ᵢˆ()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.APOMMNQPVEQBNYRULG: java.util.List ᵢˆ()>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<com.ksmobile.launcher.theme.APOMMNQPVEQBNYRULG: java.util.List ᵢˆ()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.cm.kinfoc.ⁱי: int ˎˋ(android.content.Context)>,null,null,OSPatches/getType.patch
+Localization,<android.net.NetworkInfo: int getType()>,OS,<com.cm.kinfoc.ⁱי: int ˎˋ(android.content.Context)>,null,null,OSPatches/getType.patch
+Success,null,OS,<com.cm.kinfoc.ⁱי: int ˎˋ(android.content.Context)>,null,null,OSPatches/getType.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.view.CustomTextView: void ᵢˆ(android.util.AttributeSet)>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.view.CustomTextView: void ᵢˆ(android.util.AttributeSet)>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.view.CustomTextView: void ᵢˆ(android.util.AttributeSet)>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.view.CustomTextView: void ˎˋ()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.view.CustomTextView: void ˎˋ()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.view.CustomTextView: void ˎˋ()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.view.roundedimageview.RoundedImageView: android.graphics.drawable.Drawable ˎᴵ()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.view.roundedimageview.RoundedImageView: android.graphics.drawable.Drawable ˎᴵ()>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<com.ksmobile.launcher.theme.base.view.roundedimageview.RoundedImageView: android.graphics.drawable.Drawable ˎᴵ()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.view.roundedimageview.RoundedImageView: android.graphics.drawable.Drawable ᵢˆ()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.view.roundedimageview.RoundedImageView: android.graphics.drawable.Drawable ᵢˆ()>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<com.ksmobile.launcher.theme.base.view.roundedimageview.RoundedImageView: android.graphics.drawable.Drawable ᵢˆ()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.view.View: void setBackgroundDrawable(android.graphics.drawable.Drawable)>,OS,"<com.ksmobile.base.util.ﹳﾞ: void ᵢˆ(android.view.View,android.graphics.drawable.Drawable)>",null,null,OSPatches/setBackgroundDrawable.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.facebook.ads.internal.adapters.ʾﹶ: boolean ʿʿ()>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.facebook.ads.internal.adapters.ʾﹶ: boolean ʿʿ()>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.facebook.ads.internal.adapters.ʾﹶ: boolean ʿʿ()>,null,null,DevicePatches/getWindow.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.ˎˎ: void onBackPressed()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.ˎˎ: void onBackPressed()>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<com.ksmobile.launcher.theme.base.ˎˎ: void onBackPressed()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.ˎˎ: android.graphics.drawable.Drawable ʼᵢ()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<com.ksmobile.launcher.theme.base.ˎˎ: android.graphics.drawable.Drawable ʼᵢ()>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<com.ksmobile.launcher.theme.base.ˎˎ: android.graphics.drawable.Drawable ʼᵢ()>,null,null,OSPatches/getDrawable.patch
+TimeRecord,null,null,null,13260,3650303,null

@@ -1,0 +1,34 @@
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,"<com.facebook.ads.internal.a: android.graphics.drawable.Drawable a(android.content.Context,int)>",null,null,OSPatches/getDrawable.patch
+Potential,<android.view.accessibility.AccessibilityNodeInfo: void addAction(int)>,OS,<com.facebook.ads.internal.z: void a(int)>,null,null,OSPatches/2_addAction.patch
+Localization,<android.view.accessibility.AccessibilityNodeInfo: void addAction(int)>,OS,<com.facebook.ads.internal.z: void a(int)>,null,null,OSPatches/2_addAction.patch
+Success,null,OS,<com.facebook.ads.internal.z: void a(int)>,null,null,OSPatches/2_addAction.patch
+Potential,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.internal.ta$2: void a(com.facebook.ads.internal.sf)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Localization,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.internal.ta$2: void a(com.facebook.ads.internal.sf)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Success,null,OS,<com.facebook.ads.internal.ta$2: void a(com.facebook.ads.internal.sf)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Potential,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.internal.ta$1: void a(com.facebook.ads.internal.rz)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Localization,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.internal.ta$1: void a(com.facebook.ads.internal.rz)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Success,null,OS,<com.facebook.ads.internal.ta$1: void a(com.facebook.ads.internal.rz)>,null,null,OSPatches/2_abandonAudioFocus.patch
+Potential,"<android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)>",OS,<com.facebook.ads.internal.ta$3: void a(com.facebook.ads.internal.sh)>,null,null,OSPatches/2_requestAudioFocus.patch
+Localization,"<android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)>",OS,<com.facebook.ads.internal.ta$3: void a(com.facebook.ads.internal.sh)>,null,null,OSPatches/2_requestAudioFocus.patch
+Success,null,OS,<com.facebook.ads.internal.ta$3: void a(com.facebook.ads.internal.sh)>,null,null,OSPatches/2_requestAudioFocus.patch
+Potential,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.internal.ta: void onDetachedFromWindow()>,null,null,OSPatches/2_abandonAudioFocus.patch
+Localization,<android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)>,OS,<com.facebook.ads.internal.ta: void onDetachedFromWindow()>,null,null,OSPatches/2_abandonAudioFocus.patch
+Success,null,OS,<com.facebook.ads.internal.ta: void onDetachedFromWindow()>,null,null,OSPatches/2_abandonAudioFocus.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,"<com.facebook.ads.internal.tz: com.facebook.ads.internal.ua a(android.view.View,int)>",null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,"<com.facebook.ads.internal.tz: com.facebook.ads.internal.ua a(android.view.View,int)>",null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,"<com.facebook.ads.internal.tz: com.facebook.ads.internal.ua a(android.view.View,int)>",null,null,DevicePatches/getWindow.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.facebook.ads.internal.mz: java.util.Map a(android.content.Context)>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<com.facebook.ads.internal.mz: java.util.Map a(android.content.Context)>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<com.facebook.ads.internal.mz: java.util.Map a(android.content.Context)>,null,null,DevicePatches/getWindow.patch
+Potential,<android.net.NetworkInfo: int getType()>,OS,<com.facebook.ads.internal.lx: com.facebook.ads.internal.lx$a a(android.content.Context)>,null,null,OSPatches/getType.patch
+Localization,<android.net.NetworkInfo: int getType()>,OS,<com.facebook.ads.internal.lx: com.facebook.ads.internal.lx$a a(android.content.Context)>,null,null,OSPatches/getType.patch
+Success,null,OS,<com.facebook.ads.internal.lx: com.facebook.ads.internal.lx$a a(android.content.Context)>,null,null,OSPatches/getType.patch
+Potential,<android.view.View: void setBackgroundDrawable(android.graphics.drawable.Drawable)>,OS,"<com.facebook.ads.internal.mb: void a(android.view.View,int)>",null,null,OSPatches/setBackgroundDrawable.patch
+Potential,<android.view.View: void setBackgroundDrawable(android.graphics.drawable.Drawable)>,OS,"<com.facebook.ads.internal.mb: void a(android.view.View,android.graphics.drawable.Drawable)>",null,null,OSPatches/setBackgroundDrawable.patch
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.facebook.ads.internal.lw: void a(boolean)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Localization,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.facebook.ads.internal.lw: void a(boolean)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Success,null,OS,<com.facebook.ads.internal.lw: void a(boolean)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.facebook.ads.internal.lw: void a(com.facebook.ads.internal.lw$a)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Localization,<android.view.View: void setSystemUiVisibility(int)>,OS,<com.facebook.ads.internal.lw: void a(com.facebook.ads.internal.lw$a)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Success,null,OS,<com.facebook.ads.internal.lw: void a(com.facebook.ads.internal.lw$a)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+TimeRecord,null,null,null,9591,14141907,null

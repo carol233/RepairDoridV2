@@ -1,0 +1,26 @@
+Potential,<android.view.View: void setSystemUiVisibility(int)>,OS,<org.apache.cordova.CordovaActivity: void onWindowFocusChanged(boolean)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Localization,<android.view.View: void setSystemUiVisibility(int)>,OS,<org.apache.cordova.CordovaActivity: void onWindowFocusChanged(boolean)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Success,null,OS,<org.apache.cordova.CordovaActivity: void onWindowFocusChanged(boolean)>,null,null,OSPatches/3_setSystemUiVisibility.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<org.apache.cordova.inappbrowser.InAppBrowser$6: void run()>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<org.apache.cordova.inappbrowser.InAppBrowser$6: void run()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<org.apache.cordova.inappbrowser.InAppBrowser$6: void run()>,null,null,OSPatches/getDrawable.patch
+Potential,<android.content.res.Resources: int getColor(int)>,OS,<org.apache.cordova.dialogs.Notification$4: void run()>,null,null,OSPatches/getColor.patch
+Localization,<android.content.res.Resources: int getColor(int)>,OS,<org.apache.cordova.dialogs.Notification$4: void run()>,null,null,OSPatches/getColor.patch
+Success,null,OS,<org.apache.cordova.dialogs.Notification$4: void run()>,null,null,OSPatches/getColor.patch
+Potential,<android.text.Html: android.text.Spanned fromHtml(java.lang.String)>,OS,<com.adobe.phonegap.push.FCMService: android.text.Spanned fromHtml(java.lang.String)>,null,null,OSPatches/2_fromHtml.patch
+Localization,<android.text.Html: android.text.Spanned fromHtml(java.lang.String)>,OS,<com.adobe.phonegap.push.FCMService: android.text.Spanned fromHtml(java.lang.String)>,null,null,OSPatches/2_fromHtml.patch
+Success,null,OS,<com.adobe.phonegap.push.FCMService: android.text.Spanned fromHtml(java.lang.String)>,null,null,OSPatches/2_fromHtml.patch
+Potential,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<org.apache.cordova.splashscreen.SplashScreen: void onConfigurationChanged(android.content.res.Configuration)>,null,null,OSPatches/getDrawable.patch
+Localization,<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>,OS,<org.apache.cordova.splashscreen.SplashScreen: void onConfigurationChanged(android.content.res.Configuration)>,null,null,OSPatches/getDrawable.patch
+Success,null,OS,<org.apache.cordova.splashscreen.SplashScreen: void onConfigurationChanged(android.content.res.Configuration)>,null,null,OSPatches/getDrawable.patch
+Potential,<android.view.Display: int getHeight()>,OS,<org.apache.cordova.splashscreen.SplashScreen$5: void run()>,null,null,OSPatches/getHeight.patch
+Localization,<android.view.Display: int getHeight()>,OS,<org.apache.cordova.splashscreen.SplashScreen$5: void run()>,null,null,OSPatches/getHeight.patch
+Success,null,OS,<org.apache.cordova.splashscreen.SplashScreen$5: void run()>,null,null,OSPatches/getHeight.patch
+Potential,<android.view.Display: int getWidth()>,OS,<org.apache.cordova.splashscreen.SplashScreen$5: void run()>,null,null,OSPatches/getWidth.patch
+Potential,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<org.apache.cordova.splashscreen.SplashScreen$5: void run()>,null,null,DevicePatches/getWindow.patch
+Localization,<android.app.Activity: android.view.Window getWindow()>,DEVICE,<org.apache.cordova.splashscreen.SplashScreen$5: void run()>,null,null,DevicePatches/getWindow.patch
+Success,null,DEVICE,<org.apache.cordova.splashscreen.SplashScreen$5: void run()>,null,null,DevicePatches/getWindow.patch
+Potential,<android.text.Html: android.text.Spanned fromHtml(java.lang.String)>,OS,<nl.xservices.plugins.SocialSharing$1: void run()>,null,null,OSPatches/2_fromHtml.patch
+Localization,<android.text.Html: android.text.Spanned fromHtml(java.lang.String)>,OS,<nl.xservices.plugins.SocialSharing$1: void run()>,null,null,OSPatches/2_fromHtml.patch
+Success,null,OS,<nl.xservices.plugins.SocialSharing$1: void run()>,null,null,OSPatches/2_fromHtml.patch
+TimeRecord,null,null,null,13172,4853424,null

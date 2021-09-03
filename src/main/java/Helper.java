@@ -54,19 +54,24 @@ class Helper {
                 PatchingChain<Unit> srcUnits = srcBody.getUnits();
                 AtomicBoolean ifFoundSDKCheck1 = new AtomicBoolean(false);
                 for (Iterator<Unit> unitIter1 = srcUnits.snapshotIterator(); unitIter1.hasNext(); ) {
-                    Stmt stmt1 = (Stmt) unitIter1.next();
+                    try {
+                        Stmt stmt1 = (Stmt) unitIter1.next();
 
-                    if(stmt1.toString().contains("android.os.Build$VERSION: int SDK_INT")){
-                        ifFoundSDKCheck1.set(true);
-                        continue;
-                    }
-
-                    if (stmt1.containsInvokeExpr()) {
-                        String calleeSig = stmt1.getInvokeExpr().getMethod().getSignature();
-                        if (ifFoundSDKCheck1.get() && thisMethodSig.equals(calleeSig)) { // unprotected
-                            ifCaller.set(false);
-                            break;
+                        if(stmt1.toString().contains("android.os.Build$VERSION: int SDK_INT")){
+                            ifFoundSDKCheck1.set(true);
+                            continue;
                         }
+
+                        if (stmt1.containsInvokeExpr()) {
+                            String calleeSig = stmt1.getInvokeExpr().getMethod().getSignature();
+                            if (ifFoundSDKCheck1.get() && thisMethodSig.equals(calleeSig)) { // unprotected
+                                ifCaller.set(false);
+                                break;
+                            }
+                        }
+
+                    } catch (ClassCastException e) {
+                        // System.out.println(e.getMessage());
                     }
                 }
                 break; // only check one src until now
