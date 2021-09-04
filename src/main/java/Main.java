@@ -25,7 +25,6 @@ public class Main {
 
         G.reset();
         //set options
-        //设置允许伪类（Phantom class），指的是soot为那些在其classpath找不到的类建立的模型
         Options.v().set_allow_phantom_refs(true);
         Options.v().set_whole_program(true);
         Options.v().set_prepend_classpath(true); //prepend the VM's classpath to Soot's own classpath
