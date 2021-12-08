@@ -10,7 +10,9 @@
 @@ Patch Denotation
 + $r6 = <android.os.Build$VERSION: int SDK_INT>
 + if $r6 < 24 goto <label_original>
-+ virtualinvoke $r3.<android.location.LocationManager: boolean registerGnssStatusCallback(android.location.GnssStatus.Callbackr)>($r2)
++ $r2 = new android.location.GnssStatus.Callback
++ specialinvoke $r2.<android.location.GnssStatus.Callback: void <init>()>()
++ virtualinvoke $r3.<android.location.LocationManager: boolean registerGnssStatusCallback(android.location.GnssStatus.Callback)>($r2)
 + goto <label_next>
 + <label_original>
 [Stmt] virtualinvoke $r3.<android.location.LocationManager: boolean addGpsStatusListener(android.location.GpsStatus.Listener)>($r1)
