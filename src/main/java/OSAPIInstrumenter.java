@@ -242,7 +242,6 @@ public class OSAPIInstrumenter {
                         old_new_VarArgs, varName, varType, newStmtsForSearchFields);
                 if (!flag_if_found_var.get()) {
                     System.out.println("Error (11): cannot search the variable, " + varName + " " + varType);
-                    return;
                 }
             }
             if (newStmtsForSearchFields.size() > 0) {

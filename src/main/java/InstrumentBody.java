@@ -142,6 +142,8 @@ class InstrumentBody {
             }
         }
 
+        Local aNullVar = (Local) NullType.v();
+        old_new_VarArgs.put(varName, aNullVar);
         return flag;
     }
 
@@ -186,6 +188,9 @@ class InstrumentBody {
         switch (s) {
             case "void":
                 theType = VoidType.v();
+                break;
+            case "null":
+                theType = NullType.v();
                 break;
             case "int":
                 theType = IntType.v();

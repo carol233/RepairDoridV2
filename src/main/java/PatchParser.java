@@ -380,8 +380,8 @@ public class PatchParser {
                     Matcher matcher = pattern.matcher(str);
                     if (matcher.find()) {
                         String var = matcher.group(1).trim();
-                        var = var.replaceAll("[\"\']?$", "");
-                        var = var.replaceAll("^[\"\']?", "");
+                        var = var.replaceAll("[\"']?$", "");
+                        var = var.replaceAll("^[\"']?", "");
                         MyLogStmt myLogStmt = new MyLogStmt(var);
                         addToCategoryStmt(modeForLine, myLogStmt);
                         continue;
