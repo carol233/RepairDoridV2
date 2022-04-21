@@ -13,7 +13,7 @@
 [https://developer.android.com/reference/android/graphics/Picture#beginRecording(int,%20int)]
 <android.content.pm.PackageItemInfo: CharSequence loadSafeLabel(PackageManager)>
 [Verified]<android.widget.PopupWindow: boolean isLayoutInScreenEnabled()>  ---->  <android.widget.PopupWindow: boolean isLaidOutInScreen()>
-[Verified]<android.telephony.SignalStrength: int getCdmaEcio()>    ---->    <android.telephony.CellSignalStrengthCdma: int getCdmaEcio ()>
+[Verified]<android.telephony.SignalStrength: int getCdmaEcio()>    ---->    <android.telephony.CellSignalStrengthCdma: int getCdmaEcio()>
 [REMOVED]<android.database.sqlite.SQLiteQueryBuilder: boolean isProjectionAggregationAllowed()>  
 [Verified]<android.widget.PopupWindow: void setClipToScreenEnabled(boolean)> ----> <android.widget.PopupWindow: void setIsClippedToScreen(boolean)>
 <android.app.backup.BackupManager: String getDataManagementLabel(String)>     ---->    <android.app.backup.BackupManager: String getDataManagementIntentLabel(String)>
@@ -219,7 +219,7 @@
 <com.android.internal.app.SimpleIconFactory: void setWrapperBackgroundColor(int)>    ---->    
 <android.app.InstantAppResolverService: void onGetInstantAppResolveInfo(Intent,int[],String,InstantAppResolutionCallback)>    ---->    #onGetInstantAppResolveInfo(Intent, int[], UserHandle,  String, InstantAppResolutionCallback)
 <android.hardware.hdmi.HdmiControlManager: void powerOffRemoteDevice(HdmiDeviceInfo)>
-<android.telephony.SignalStrength: int getEvdoEcio()>    ---->    android.telephony#CellSignalStrengthCdma
+<android.telephony.SignalStrength: int getEvdoEcio()>    ---->    CellSignalStrengthCdma#getEvdoEcio.
 <android.telephony.data.ApnSetting: InetAddress getProxyAddress()>    ---->    #getProxyAddressAsString()
 <android.net.wifi.WifiManager: List<PasspointConfiguration> getPasspointConfigurations()>    ---->    
 <android.media.MediaFile: boolean isImageFileType(int)>    ---->    

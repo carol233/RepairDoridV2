@@ -1,45 +1,45 @@
-<android.content.pm.ShortcutQueryWrapper: void __metadata()>    ---->    
-<android.app.AppOpsManager: int noteProxyOpNoThrow(String,String)>    ---->    #noteProxyOpNoThrow(String, String, int, String, String)
-<android.view.View: void setOnSystemUiVisibilityChangeListener(OnSystemUiVisibilityChangeListener)>    ---->    WindowInsets#isVisible(int)
-<android.app.AppOpsManager: int startOp(String,int,String)>    ---->    #startOp(String, int, String, String, String)
+<android.content.pm.ShortcutQueryWrapper: void __metadata()>
+<android.app.AppOpsManager: int noteProxyOpNoThrow(String,String)>
+<android.view.View: void setOnSystemUiVisibilityChangeListener(OnSystemUiVisibilityChangeListener)>
+<android.app.AppOpsManager: int startOp(String,int,String)>
 <android.net.TetheringManager: int setUsbTethering(boolean)>
-<android.graphics.Canvas: boolean quickReject(RectF,EdgeType)>    ---->    #quickReject(RectF)
-<android.graphics.Outline: void setConvexPath(Path)>    ---->    #setPath
-<android.content.pm.PackageParser: Pair<String, String> parsePackageSplitNames(XmlPullParser,AttributeSet)>    ---->    android.content.pm.parsing.ApkLiteParseUtils#parsePackageSplitNames
+<android.graphics.Canvas: boolean quickReject(RectF,EdgeType)>
+<android.graphics.Outline: void setConvexPath(Path)>
+<android.content.pm.PackageParser: Pair<String, String> parsePackageSplitNames(XmlPullParser,AttributeSet)>
 <com.android.server.SystemService: void onCleanupUser(int)>
-<android.content.IContentProvider: int bulkInsert(String,Uri,ContentValues[])>    ---->    
-<android.util.TrustedTime: long currentTimeMillis()>    ---->    NtpTrustedTime
+<android.content.IContentProvider: int bulkInsert(String,Uri,ContentValues[])>
+<android.util.TrustedTime: long currentTimeMillis()>
 <android.app.AppOpsManager: void startWatchingActive(int[],OnOpActiveChangedListener)>
-<android.service.euicc.EuiccService: int onEraseSubscriptions(int)>    ---->    #onEraseSubscriptions(int, int)
-<android.view.View: void dispatchSystemUiVisibilityChanged(int)>    ---->    WindowInsets#isVisible(int)
-<com.android.codegentest.SampleWithNestedDataClasses.NestedDataClass: void __metadata()>    ---->    
-<android.telephony.ims.ImsCallSessionListener: void callSessionMayHandover(int,int)>    ---->    #onMayHandover(int, int)
-<android.graphics.Canvas: boolean quickReject(float,float,float,float,EdgeType)>    ---->    #quickReject(float, float, float, float)
+<android.service.euicc.EuiccService: int onEraseSubscriptions(int)>
+<android.view.View: void dispatchSystemUiVisibilityChanged(int)>
+<com.android.codegentest.SampleWithNestedDataClasses.NestedDataClass: void __metadata()>
+<android.telephony.ims.ImsCallSessionListener: void callSessionMayHandover(int,int)>
+<android.graphics.Canvas: boolean quickReject(float,float,float,float,EdgeType)>
 <com.android.server.SystemService: void onSwitchUser(UserInfo,UserInfo)>
-<android.app.Notification.BubbleMetadata.Builder: void <init>()>    ---->    Builder#Builder(String)
-<android.graphics.Canvas: boolean quickReject(Path,EdgeType)>    ---->    #quickReject(Path)
-<android.app.AppOpsManager: int startOpNoThrow(String,int,String)>    ---->    #startOpNoThrow(String, int, String, String, String)
+<android.app.Notification.BubbleMetadata.Builder: void <init>()>
+<android.graphics.Canvas: boolean quickReject(Path,EdgeType)>
+<android.app.AppOpsManager: int startOpNoThrow(String,int,String)>
 <android.net.NetworkAgent: void setLegacyExtraInfo(String)>
-<android.hardware.biometrics.BiometricPrompt.Builder: Builder setDeviceCredentialAllowed(boolean)>    ---->    #setAllowedAuthenticators(int)
+<android.hardware.biometrics.BiometricPrompt.Builder: Builder setDeviceCredentialAllowed(boolean)>
 <android.telephony.TelephonyManager: String getNetworkCountryIsoForPhone(int)>
-<com.android.internal.view.InlineSuggestionsRequestInfo: void __metadata()>    ---->    
+<com.android.internal.view.InlineSuggestionsRequestInfo: void __metadata()>
 <android.app.AppOpsManager: int startOp(int,int,String)>
-<android.telephony.ims.stub.ImsSmsImplBase: void onSendSmsResult(int,int,int,int)>    ---->    #onSendSmsResultSuccess(int, int)
-<android.media.MediaScanner: void setLocale(String)>    ---->    
+<android.telephony.ims.stub.ImsSmsImplBase: void onSendSmsResult(int,int,int,int)>
+<android.media.MediaScanner: void setLocale(String)>
 <android.net.TetheringManager: int tether(String)>
-<android.app.AppOpsManager.OpEntry: int getProxyUid()>    ---->    #getLastProxyInfo(int)
-<android.app.AppOpsManager: int noteOpNoThrow(String,int,String)>    ---->    #noteOpNoThrow(String, int, String, String, String)
-<android.view.Display: void getRectSize(Rect)>    ---->    WindowMetrics#getBounds()
+<android.app.AppOpsManager.OpEntry: int getProxyUid()>
+<android.app.AppOpsManager: int noteOpNoThrow(String,int,String)>
+<android.view.Display: void getRectSize(Rect)>
 <android.content.Context: String getFeatureId()>
-<android.hardware.camera2.CameraDevice: void createReprocessableCaptureSessionByConfigurations(InputConfiguration,List<OutputConfiguration>,StateCallback,Handler)>    ---->    #createCaptureSession(android.hardware.camera2.params.SessionConfiguration)
-<com.android.server.pm.parsing.pkg.PkgAppInfo: int getTargetSandboxVersion()>    ---->    
-<com.android.systemui.shared.system.TransactionCompat: TransactionCompat setEarlyWakeup()>    ---->    
-<android.telephony.data.DataProfile: int getMtu()>    ---->    #getMtuV4
+<android.hardware.camera2.CameraDevice: void createReprocessableCaptureSessionByConfigurations(InputConfiguration,List<OutputConfiguration>,StateCallback,Handler)>
+<com.android.server.pm.parsing.pkg.PkgAppInfo: int getTargetSandboxVersion()>
+<com.android.systemui.shared.system.TransactionCompat: TransactionCompat setEarlyWakeup()>
+<android.telephony.data.DataProfile: int getMtu()>
 <android.view.inputmethod.InputMethodManager: void windowDismissed(IBinder)>
-<android.media.MediaScanner: void prescan(String,boolean)>    ---->    
-<android.hardware.soundtrigger.KeyphraseMetadata: void __metadata()>    ---->    
-<android.webkit.WebSettings: void setAllowFileAccessFromFileURLs(boolean)>    ---->    
-<android.content.pm.parsing.ParsingPackageRead: int getTargetSandboxVersion()>    ---->    
+<android.media.MediaScanner: void prescan(String,boolean)>
+<android.hardware.soundtrigger.KeyphraseMetadata: void __metadata()>
+<android.webkit.WebSettings: void setAllowFileAccessFromFileURLs(boolean)>
+<android.content.pm.parsing.ParsingPackageRead: int getTargetSandboxVersion()>
 <android.os.VintfObject: int verify(String[])>
 <android.view.View: void onWindowSystemUiVisibilityChanged(int)>
 <com.android.internal.util.AnnotationValidations: void validate(Class<? extends Annotation>,Annotation,int,Object)>
@@ -116,7 +116,7 @@
 <android.view.WindowInsets: int getSystemWindowInsetTop()>
 <android.telephony.PreciseDataConnectionState: String getDataConnectionApn()>
 <com.android.codegentest.SampleDataClass: void forEachField(PerObjectFieldAction<SampleDataClass>)>
-<android.hardware.camera2.CameraDevice: void createCaptureSession(List<Surface>,StateCallback,Handler)>       ---->    createCaptureSession(android.hardware.camera2.params.SessionConfiguration)}
+<android.hardware.camera2.CameraDevice: void createCaptureSession(List<Surface>,StateCallback,Handler)>
 <android.app.Activity: boolean navigateUpToFromChild(Activity,Intent)>
 <android.util.TrustedTime: boolean hasCache()>
 <android.app.AppOpsManager: int startOp(int,int,String,boolean)>
@@ -367,10 +367,10 @@
 <android.net.ConnectivityManager: void registerTetheringEventCallback(Executor,OnTetheringEventCallback)>
 <com.android.server.ConnectivityService: String[] getTetheredIfaces()>
 <android.app.admin.DevicePolicyManager: void setProfileOwnerCanAccessDeviceIds(ComponentName)>
-(N)<android.hardware.camera2.CameraDevice: void createCustomCaptureSession(InputConfiguration,List<OutputConfiguration>,int,StateCallback,Handler)>    
+<android.hardware.camera2.CameraDevice: void createCustomCaptureSession(InputConfiguration,List<OutputConfiguration>,int,StateCallback,Handler)>
 <android.content.pm.parsing.ParsingPackageRead: String getSharedUserId()>
-<android.app.InstantAppResolverService: void onGetInstantAppIntentFilter(Intent,int[],UserHandle,String,InstantAppResolutionCallback)>    ---->    
-(C)<android.telephony.TelephonyManager: String sendEnvelopeWithStatus(int,String)> https://developer.android.com/reference/android/telephony/TelephonyManager
-<com.android.codegentest.SampleWithNestedDataClasses.NestedDataClass2.NestedDataClass3: void __metadata()>    ---->    
-(Y)<android.telephony.TelephonyManager: int getPhoneCount()>    ---->    <android.telephony.TelephonyManager: int getActiveModemCount()>
-(N)<android.app.AppOpsManager: int noteOp(int,int,String)>    ---->  <android.app.AppOpsManager: int noteOp(java.lang.String, int, java.lang.String, java.lang.String, java.lang.String)> 
+<android.app.InstantAppResolverService: void onGetInstantAppIntentFilter(Intent,int[],UserHandle,String,InstantAppResolutionCallback)>
+<android.telephony.TelephonyManager: String sendEnvelopeWithStatus(int,String)>
+<com.android.codegentest.SampleWithNestedDataClasses.NestedDataClass2.NestedDataClass3: void __metadata()>
+<android.telephony.TelephonyManager: int getPhoneCount()>
+<android.app.AppOpsManager: int noteOp(int,int,String)>
